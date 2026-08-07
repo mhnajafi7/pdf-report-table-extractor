@@ -1,0 +1,4735 @@
+{
+  "pipeline": "single_folder_table_bundle_v9_txt_line_selectors",
+  "pipeline_version": "9.0.0",
+  "source_pdf": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/pdf-report-table-extractor/splits/PR20140005_Daily_Drilling_Report/PR20140005_Daily_Drilling_Report_020/PR20140005_Daily_Drilling_Report_020.pdf",
+  "source_titles_txt": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/pdf-report-table-extractor/Types/type4.txt",
+  "output_folder": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/pdf-report-table-extractor/splits/PR20140005_Daily_Drilling_Report/PR20140005_Daily_Drilling_Report_020/table_bundle",
+  "output_naming": {
+    "crop_pattern": "slice__NNNN__pPPP__title.png",
+    "trailing_crop_pattern": "slice__NNNN__pPPP__remaining-content.png",
+    "all_tables_map": "map__all_tables.pdf",
+    "table_metadata": "data__tables.json",
+    "text_cache": "cache__text_layer.json"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "pdfplumber": "0.11.9",
+    "pdf2image": "1.17.0",
+    "Pillow": "10.4.0"
+  },
+  "config": {
+    "target_dpi": 250,
+    "pdf_coordinate_dpi": 72,
+    "line_y_tolerance_points": 3.0,
+    "horizontal_gap_split_points": 10.0,
+    "min_text_segments_on_titled_page": 3,
+    "use_text_cache": true,
+    "force_text_cache": false,
+    "crop_padding_pixels": 3,
+    "table_min_x_overlap_pixels": 5.0,
+    "table_min_x_overlap_ratio": 0.05,
+    "min_text_coverage_for_cell_match": 0.35,
+    "auto_expand_title_width": true,
+    "column_guide_min_titles": 2,
+    "column_guide_min_envelope_coverage": 0.45,
+    "column_guide_min_center_span": 0.25,
+    "title_row_min_vertical_overlap": 0.6,
+    "marker_lane_min_vertical_overlap": 0.4,
+    "title_border_tolerance_pixels": 3.0,
+    "guide_border_vertical_margin_pixels": 15.0,
+    "manual_line_coordinate_tolerance_pixels": 3.0,
+    "manual_line_min_coverage_ratio": 0.2,
+    "auto_expand_pre_guide_singletons": true,
+    "pre_guide_y_tolerance_pixels": 4.0,
+    "pre_guide_singleton_min_width_ratio": 0.2,
+    "allow_missing_titles": false,
+    "extract_trailing_content": true,
+    "trailing_content_min_gap_pixels": 1.0,
+    "trailing_content_min_alnum_characters": 3,
+    "trailing_content_top_padding_pixels": 8,
+    "trailing_content_bottom_padding_pixels": 24,
+    "trailing_content_horizontal_padding_pixels": 8,
+    "trailing_content_use_page_content_width": true,
+    "trailing_content_crop_to_page_bottom": true
+  },
+  "cache": {
+    "hit": false,
+    "signature": {
+      "pdf_sha256": "3b6612a31c2baf6bb796695795415bcda5f2be5acca5dd8cd5660f7491e3be97",
+      "pdf_size": 24618,
+      "pdf_mtime_ns": 1786139044349934045,
+      "page_count": 3,
+      "target_dpi": 250,
+      "pdf_coordinate_dpi": 72,
+      "line_y_tolerance_points": 3.0,
+      "horizontal_gap_split_points": 10.0,
+      "pdfplumber_version": "0.11.9",
+      "text_cache_schema": 2,
+      "pipeline_version": "9.0.0"
+    }
+  },
+  "page_count": 3,
+  "titles_per_page": [
+    [
+      {
+        "title": "WELL",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "WELL"
+      },
+      {
+        "title": "MUD PROPERTIES",
+        "end_marker": "ADDITIVES",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "MUD PROPERTIES --- ADDITIVES"
+      },
+      {
+        "title": "SOLIDS CONTROL",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "SOLIDS CONTROL"
+      },
+      {
+        "title": "FORMATION DATA",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "FORMATION DATA"
+      },
+      {
+        "title": "PUMPS",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "PUMPS"
+      },
+      {
+        "title": "DRILLS / BOPS",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "DRILLS / BOPS"
+      },
+      {
+        "title": "TIME ANALYSIS",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "TIME ANALYSIS"
+      },
+      {
+        "title": "BIT DATA",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "BIT DATA"
+      },
+      {
+        "title": "SURVEYS",
+        "end_marker": "COMMENTS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "SURVEYS --- COMMENTS"
+      },
+      {
+        "title": "BHA DETAILS",
+        "end_marker": "STRING WEIGHT (Klbf)",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "BHA DETAILS --- STRING WEIGHT (Klbf)"
+      },
+      {
+        "title": "DRILLING TOOLS",
+        "end_marker": "HOURS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "DRILLING TOOLS --- HOURS"
+      },
+      {
+        "title": "DRILLING DATA",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "DRILLING DATA"
+      }
+    ],
+    [
+      {
+        "title": "FROM",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "FROM"
+      },
+      {
+        "title": "PROGRAMME NEXT 24 HRS:",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "PROGRAMME NEXT 24 HRS:"
+      },
+      {
+        "title": "WEATHER",
+        "end_marker": "WIND SPEED",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "WEATHER --- WIND SPEED"
+      },
+      {
+        "title": "BULK STOCK",
+        "end_marker": "CAMPlt",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "BULK STOCK --- CAMPlt"
+      },
+      {
+        "title": "PERSONNEL ON RIG",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "PERSONNEL ON RIG"
+      },
+      {
+        "title": "TRANSPORTATION",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "TRANSPORTATION"
+      },
+      {
+        "title": "COSTS",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {
+          "L": 2,
+          "D": 2
+        },
+        "raw": "COSTS /// L2 D2"
+      },
+      {
+        "title": "SUPERVISOR(S)",
+        "end_marker": "RIG MANAGER",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "SUPERVISOR(S) --- RIG MANAGER"
+      }
+    ],
+    [
+      {
+        "title": "HSE",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "HSE"
+      }
+    ]
+  ],
+  "text_segments_per_page": [
+    173,
+    107,
+    43
+  ],
+  "cells_per_page": [
+    466,
+    182,
+    23
+  ],
+  "missing_titles": [],
+  "missing_end_markers": [],
+  "column_lanes_by_page": {
+    "1": [
+      [
+        167.87037037037035,
+        598.1944290123456
+      ],
+      [
+        598.1944290123456,
+        796.7972274305555
+      ],
+      [
+        796.7972274305555,
+        1459.065535929952
+      ],
+      [
+        1459.065535929952,
+        1974.2029649758454
+      ]
+    ],
+    "2": [
+      [
+        153.79032258064515,
+        1033.9236111111113
+      ],
+      [
+        1033.9236111111113,
+        2008.2929670698925
+      ]
+    ],
+    "3": [
+      [
+        275.23148533950615,
+        1845.6481867283953
+      ]
+    ]
+  },
+  "guide_top_by_page": {
+    "1": 661.8402604166668,
+    "2": 1558.3680555555559,
+    "3": null
+  },
+  "title_cells": {
+    "1": [
+      {
+        "title": "WELL",
+        "title_request_raw": "WELL",
+        "title_index": 0,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "WELL",
+          0
+        ],
+        "bbox": [
+          167.87037037037035,
+          284.9999999999998,
+          1974.2029649758454,
+          444.3749930555555
+        ],
+        "original_bbox": [
+          167.87037037037035,
+          284.9999999999998,
+          1974.2029649758454,
+          444.3749930555555
+        ],
+        "matched_text": "WELL:",
+        "text_bbox": [
+          314.1479166666667,
+          311.2670833333332,
+          397.43916666666667,
+          337.5170833333334
+        ],
+        "text_match_score": 3.5,
+        "text_coverage": 1.0,
+        "geometry_score": 5.3,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          167.87037037037035,
+          1974.2029649758454
+        ],
+        "auto_width_expanded": true,
+        "pre_guide_full_width": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "MUD PROPERTIES",
+        "title_request_raw": "MUD PROPERTIES --- ADDITIVES",
+        "title_index": 1,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "MUD PROPERTIES",
+          0
+        ],
+        "bbox": [
+          167.87037037037035,
+          661.8402604166668,
+          598.1944290123456,
+          700.2777604166669
+        ],
+        "original_bbox": [
+          167.87037037037035,
+          661.8402604166668,
+          598.1944290123456,
+          700.2777604166669
+        ],
+        "matched_text": "MUD PROPERTIES",
+        "text_bbox": [
+          266.6666666666667,
+          669.6698611111111,
+          502.41791666666666,
+          695.9198611111112
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.473271939318121,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "ADDITIVES",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          598.1944290123456,
+          661.8402604166668,
+          796.7972274305555,
+          700.2777604166669
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "ADDITIVES",
+        "end_marker_text_bbox": [
+          628.8194444444445,
+          669.6698611111111,
+          768.3644444444445,
+          695.9198611111112
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.47916003865843,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 0,
+        "parent_lane": [
+          167.87037037037035,
+          598.1944290123456
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "SOLIDS CONTROL",
+        "title_request_raw": "SOLIDS CONTROL",
+        "title_index": 2,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "SOLIDS CONTROL",
+          0
+        ],
+        "bbox": [
+          796.7972274305555,
+          661.8402604166668,
+          1459.065535929952,
+          700.2777604166669
+        ],
+        "original_bbox": [
+          796.7972274305555,
+          661.8402604166668,
+          1459.065535929952,
+          700.2777604166669
+        ],
+        "matched_text": "SOLIDS CONTROL",
+        "text_bbox": [
+          1048.5069444444446,
+          669.6698611111111,
+          1293.3497222222225,
+          695.9198611111112
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.460392949632356,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          796.7972274305555,
+          1459.065535929952
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "FORMATION DATA",
+        "title_request_raw": "FORMATION DATA",
+        "title_index": 3,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "FORMATION DATA",
+          0
+        ],
+        "bbox": [
+          1459.065535929952,
+          661.8402604166668,
+          1974.2029649758454,
+          700.2777604166669
+        ],
+        "original_bbox": [
+          1459.065535929952,
+          661.8402604166668,
+          1974.2029649758454,
+          700.2777604166669
+        ],
+        "matched_text": "FORMATION DATA",
+        "text_bbox": [
+          1598.6805555555557,
+          669.6698611111111,
+          1836.6893055555554,
+          695.9198611111112
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.468307535826066,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1459.065535929952,
+          1974.2029649758454
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "PUMPS",
+        "title_request_raw": "PUMPS",
+        "title_index": 4,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "PUMPS",
+          0
+        ],
+        "bbox": [
+          796.7972274305555,
+          1003.7152604166668,
+          1459.065535929952,
+          1041.6319270833335
+        ],
+        "original_bbox": [
+          796.7972274305555,
+          1003.7152604166668,
+          993.2986284722222,
+          1041.6319270833335
+        ],
+        "matched_text": "PUMPS",
+        "text_bbox": [
+          849.7569444444445,
+          1011.024027777778,
+          943.0756944444445,
+          1037.2740277777777
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.469584316435851,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          796.7972274305555,
+          1459.065535929952
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "DRILLS / BOPS",
+        "title_request_raw": "DRILLS / BOPS",
+        "title_index": 5,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "DRILLS / BOPS",
+          0
+        ],
+        "bbox": [
+          1459.065535929952,
+          965.7517361111112,
+          1974.2029649758454,
+          1003.7152604166668
+        ],
+        "original_bbox": [
+          1459.065535929952,
+          965.7517361111112,
+          1974.2029649758454,
+          1003.7152604166668
+        ],
+        "matched_text": "DRILLS / BOPS",
+        "text_bbox": [
+          1591.995138888889,
+          973.1073611111112,
+          1782.727638888889,
+          999.357361111111
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.460939695905127,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1459.065535929952,
+          1974.2029649758454
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "TIME ANALYSIS",
+        "title_request_raw": "TIME ANALYSIS",
+        "title_index": 6,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "TIME ANALYSIS",
+          0
+        ],
+        "bbox": [
+          1459.065535929952,
+          1231.2384104938271,
+          1974.2029649758454,
+          1269.1319270833335
+        ],
+        "original_bbox": [
+          1459.065535929952,
+          1231.2384104938271,
+          1974.2029649758454,
+          1269.1319270833335
+        ],
+        "matched_text": "TIME ANALYSIS",
+        "text_bbox": [
+          1622.4305555555557,
+          1238.524027777778,
+          1824.7918055555556,
+          1264.7740277777777
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.463252199032927,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1459.065535929952,
+          1974.2029649758454
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "BIT DATA",
+        "title_request_raw": "BIT DATA",
+        "title_index": 7,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "BIT DATA",
+          0
+        ],
+        "bbox": [
+          167.87037037037035,
+          1420.79859375,
+          796.7972274305555,
+          1458.784704861111
+        ],
+        "original_bbox": [
+          167.87037037037035,
+          1420.79859375,
+          796.7972274305555,
+          1458.784704861111
+        ],
+        "matched_text": "BIT DATA",
+        "text_bbox": [
+          408.4027777777778,
+          1428.1768055555558,
+          530.2027777777778,
+          1454.4268055555556
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.425278018694033,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          167.87037037037035,
+          796.7972274305555
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "SURVEYS",
+        "title_request_raw": "SURVEYS --- COMMENTS",
+        "title_index": 8,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "SURVEYS",
+          0
+        ],
+        "bbox": [
+          167.87037037037035,
+          2103.8194444444443,
+          598.1944290123456,
+          2141.3889236111113
+        ],
+        "original_bbox": [
+          167.87037037037035,
+          2103.8194444444443,
+          403.17709924768513,
+          2141.3889236111113
+        ],
+        "matched_text": "SURVEYS:",
+        "text_bbox": [
+          181.23125000000002,
+          2110.7809722222223,
+          315.00125,
+          2137.0309722222223
+        ],
+        "text_match_score": 3.5,
+        "text_coverage": 1.0,
+        "geometry_score": 5.474824303980656,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "COMMENTS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          1159.20140625,
+          2103.8194444444443,
+          1459.065535929952,
+          2141.3889236111113
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "COMMENTS",
+        "end_marker_text_bbox": [
+          1239.826388888889,
+          2109.9330555555557,
+          1381.2980555555555,
+          2134.099722222222
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.467048630409135,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 0,
+        "parent_lane": [
+          167.87037037037035,
+          598.1944290123456
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "BHA DETAILS",
+        "title_request_raw": "BHA DETAILS --- STRING WEIGHT (Klbf)",
+        "title_index": 9,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "BHA DETAILS",
+          0
+        ],
+        "bbox": [
+          796.7972274305555,
+          1420.79859375,
+          1459.065535929952,
+          1458.784704861111
+        ],
+        "original_bbox": [
+          796.7972274305555,
+          1420.79859375,
+          1159.20140625,
+          1458.784704861111
+        ],
+        "matched_text": "BHA DETAILS",
+        "text_bbox": [
+          876.8395833333334,
+          1428.1768055555558,
+          1052.2976388888892,
+          1454.4268055555556
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.470110722913662,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "STRING WEIGHT (Klbf)",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          796.7972274305555,
+          2065.5555381944446,
+          1159.20140625,
+          2103.8194444444443
+        ],
+        "end_marker_direction": "bottom",
+        "end_marker_matched_text": "STRING WEIGHT (Klbf)",
+        "end_marker_text_bbox": [
+          816.8027777777778,
+          2072.8643055555553,
+          1104.1090277777778,
+          2099.114305555556
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.481613116718013,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 0,
+        "parent_lane": [
+          796.7972274305555,
+          1459.065535929952
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "DRILLING TOOLS",
+        "title_request_raw": "DRILLING TOOLS --- HOURS",
+        "title_index": 10,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "DRILLING TOOLS",
+          0
+        ],
+        "bbox": [
+          167.87037037037035,
+          2368.5912450396827,
+          598.1944290123456,
+          2406.8750086805558
+        ],
+        "original_bbox": [
+          167.87037037037035,
+          2368.5912450396827,
+          403.17709924768513,
+          2406.8750086805558
+        ],
+        "matched_text": "DRILLING TOOLS",
+        "text_bbox": [
+          176.66666666666669,
+          2376.197638888889,
+          397.4029166666668,
+          2402.447638888889
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.484453021254019,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "HOURS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          598.1944290123456,
+          2368.5912450396827,
+          796.7972274305555,
+          2406.8750086805558
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "HOURS",
+        "end_marker_text_bbox": [
+          651.7361111111111,
+          2376.197638888889,
+          745.894861111111,
+          2402.447638888889
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.469238323705105,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 0,
+        "parent_lane": [
+          167.87037037037035,
+          598.1944290123456
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "DRILLING DATA",
+        "title_request_raw": "DRILLING DATA",
+        "title_index": 11,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "DRILLING DATA",
+          0
+        ],
+        "bbox": [
+          796.7972274305555,
+          2368.5912450396827,
+          1459.065535929952,
+          2406.8750086805558
+        ],
+        "original_bbox": [
+          796.7972274305555,
+          2368.5912450396827,
+          1459.065535929952,
+          2406.8750086805558
+        ],
+        "matched_text": "DRILLING DATA",
+        "text_bbox": [
+          1027.6736111111113,
+          2376.197638888889,
+          1230.6648611111113,
+          2402.447638888889
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.45241807874889,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          796.7972274305555,
+          1459.065535929952
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      }
+    ],
+    "2": [
+      {
+        "title": "FROM",
+        "title_request_raw": "FROM",
+        "title_index": 0,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "FROM",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          814.4444444444445,
+          2008.2929670698925,
+          851.3194444444443
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          814.4444444444445,
+          2008.2929670698925,
+          851.3194444444443
+        ],
+        "matched_text": "FROM",
+        "text_bbox": [
+          189.58333333333334,
+          822.1552777777777,
+          260.5366666666667,
+          846.3219444444445
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.3,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          2008.2929670698925
+        ],
+        "auto_width_expanded": true,
+        "pre_guide_full_width": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "PROGRAMME NEXT 24 HRS:",
+        "title_request_raw": "PROGRAMME NEXT 24 HRS:",
+        "title_index": 1,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "PROGRAMME NEXT 24 HRS:",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          1430.7986111111109,
+          2008.2929670698925,
+          1473.1597743055556
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          1430.7986111111109,
+          2008.2929670698925,
+          1473.1597743055556
+        ],
+        "matched_text": "PROGRAMME NEXT 24 HRS:",
+        "text_bbox": [
+          158.75,
+          1441.9122222222225,
+          492.0325000000001,
+          1466.078888888889
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.402463746064772,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          2008.2929670698925
+        ],
+        "auto_width_expanded": true,
+        "pre_guide_full_width": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "WEATHER",
+        "title_request_raw": "WEATHER --- WIND SPEED",
+        "title_index": 2,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "WEATHER",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          1558.3680555555559,
+          1033.9236111111113,
+          1600.6597743055556
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          1558.3680555555559,
+          437.56944444444446,
+          1600.6597743055556
+        ],
+        "matched_text": "WEATHER",
+        "text_bbox": [
+          172.09,
+          1568.578888888889,
+          294.035,
+          1592.7455555555555
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.459275568915939,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "WIND SPEED",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          1574.5734126984128,
+          1558.3680555555559,
+          1822.0139409722221,
+          1600.6597743055556
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "WIND SPEED",
+        "end_marker_text_bbox": [
+          1629.1038888888888,
+          1568.9955555555557,
+          1783.4563888888886,
+          1593.1622222222222
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.471945938176825,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          1033.9236111111113
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "BULK STOCK",
+        "title_request_raw": "BULK STOCK --- CAMPlt",
+        "title_index": 3,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "BULK STOCK",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          1643.3680555555554,
+          1033.9236111111113,
+          1685.6597222222222
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          1643.3680555555554,
+          437.56944444444446,
+          1685.6597222222222
+        ],
+        "matched_text": "BULK STOCK",
+        "text_bbox": [
+          172.09,
+          1653.578888888889,
+          330.285,
+          1677.7455555555557
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.4686075120413635,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "CAMPlt",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          1822.0139409722221,
+          1643.3680555555554,
+          2008.2929670698925,
+          1685.6597222222222
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "CAMPlt",
+        "end_marker_text_bbox": [
+          1875.8333333333335,
+          1653.9955555555557,
+          1957.4441666666667,
+          1678.1622222222222
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.460055757017031,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          1033.9236111111113
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "PERSONNEL ON RIG",
+        "title_request_raw": "PERSONNEL ON RIG",
+        "title_index": 4,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "PERSONNEL ON RIG",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          1728.3680555555554,
+          577.5694270833333,
+          1770.6597222222222
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          1728.3680555555554,
+          577.5694270833333,
+          1770.6597222222222
+        ],
+        "matched_text": "PERSONNEL ON",
+        "text_bbox": [
+          229.59,
+          1738.578888888889,
+          423.1891666666667,
+          1762.7455555555557
+        ],
+        "text_match_score": 0.25,
+        "text_coverage": 1.0,
+        "geometry_score": 5.461693356141527,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          1033.9236111111113
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "TRANSPORTATION",
+        "title_request_raw": "TRANSPORTATION",
+        "title_index": 5,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "TRANSPORTATION",
+          0
+        ],
+        "bbox": [
+          577.5694270833333,
+          1728.3680555555554,
+          1285.2430555555557,
+          1770.6597222222222
+        ],
+        "original_bbox": [
+          577.5694270833333,
+          1728.3680555555554,
+          1285.2430555555557,
+          1770.6597222222222
+        ],
+        "matched_text": "TRANSPORTATION",
+        "text_bbox": [
+          813.9236111111111,
+          1738.578888888889,
+          1038.3836111111111,
+          1762.7455555555557
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.444826300907672,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          1033.9236111111113
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "COSTS",
+        "title_request_raw": "COSTS /// L2 D2",
+        "title_index": 6,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "COSTS",
+          0
+        ],
+        "bbox": [
+          1033.9236111111113,
+          1728.3680555555554,
+          2008.2929670698925,
+          1770.6597222222222
+        ],
+        "original_bbox": [
+          1285.2430555555557,
+          1728.3680555555554,
+          1822.0139409722221,
+          1770.6597222222222
+        ],
+        "matched_text": "COSTS",
+        "text_bbox": [
+          1513.6805555555557,
+          1738.578888888889,
+          1596.8380555555555,
+          1762.7455555555557
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.387039767972923,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {
+          "L": 2,
+          "D": 2
+        },
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 1,
+        "parent_lane": [
+          1033.9236111111113,
+          2008.2929670698925
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "SUPERVISOR(S)",
+        "title_request_raw": "SUPERVISOR(S) --- RIG MANAGER",
+        "title_index": 7,
+        "occurrence_index": 0,
+        "override_key": [
+          1,
+          "SUPERVISOR(S)",
+          0
+        ],
+        "bbox": [
+          153.79032258064515,
+          2195.972222222222,
+          1033.9236111111113,
+          2280.034774305556
+        ],
+        "original_bbox": [
+          153.79032258064515,
+          2195.972222222222,
+          437.56944444444446,
+          2280.034774305556
+        ],
+        "matched_text": "SUPERVISOR(S)",
+        "text_bbox": [
+          195.0,
+          2224.9330555555557,
+          386.2308333333333,
+          2249.099722222222
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.448381147979149,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "RIG MANAGER",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          1285.2430555555557,
+          2195.972222222222,
+          1574.5734126984128,
+          2280.034774305556
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "RIG MANAGER",
+        "end_marker_text_bbox": [
+          1344.4097222222222,
+          2226.599722222222,
+          1518.4822222222222,
+          2250.766388888889
+        ],
+        "end_marker_text_score": 4.0,
+        "end_marker_geometry_score": 5.442183785174859,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 1,
+        "parent_lane": [
+          153.79032258064515,
+          1033.9236111111113
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      }
+    ],
+    "3": [
+      {
+        "title": "HSE",
+        "title_request_raw": "HSE",
+        "title_index": 0,
+        "occurrence_index": 0,
+        "override_key": [
+          2,
+          "HSE",
+          0
+        ],
+        "bbox": [
+          275.23148533950615,
+          452.63424768518513,
+          1845.6481867283953,
+          523.2638773148149
+        ],
+        "original_bbox": [
+          275.23148533950615,
+          452.63424768518513,
+          708.6111284722223,
+          523.2638773148149
+        ],
+        "matched_text": "HSE",
+        "text_bbox": [
+          469.65277777777777,
+          475.8190277777779,
+          518.4115277777778,
+          499.569027777778
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.3,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 2,
+        "parent_lane": [
+          275.23148533950615,
+          1845.6481867283953
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      }
+    ]
+  },
+  "tables": [
+    {
+      "record_type": "table",
+      "slice_id": "T0001",
+      "table_id": "T0001",
+      "sequence": 1,
+      "page_number": 0,
+      "page": 1,
+      "title": "WELL",
+      "title_request_raw": "WELL",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        444.3749930555555
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        661.8402604166668
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        661.8402604166668
+      ],
+      "closing_title": "MUD PROPERTIES",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        314.1479166666667,
+        311.2670833333332,
+        397.43916666666667,
+        337.5170833333334
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0001__p001__WELL.png",
+      "crop_bbox_with_padding": [
+        165,
+        282,
+        1977,
+        665
+      ],
+      "crop_path": "slice__0001__p001__WELL.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0002",
+      "table_id": "T0002",
+      "sequence": 2,
+      "page_number": 0,
+      "page": 1,
+      "title": "MUD PROPERTIES",
+      "title_request_raw": "MUD PROPERTIES --- ADDITIVES",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        661.8402604166668,
+        598.1944290123456,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        661.8402604166668,
+        796.7972274305555,
+        1420.79859375
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        661.8402604166668,
+        598.1944290123456,
+        1420.79859375
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "ADDITIVES",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        598.1944290123456,
+        661.8402604166668,
+        796.7972274305555,
+        700.2777604166669
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "ADDITIVES",
+      "title_text_bbox": [
+        266.6666666666667,
+        669.6698611111111,
+        502.41791666666666,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        628.8194444444445,
+        669.6698611111111,
+        768.3644444444445,
+        695.9198611111112
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0002__p001__MUD-PROPERTIES.png",
+      "crop_bbox_with_padding": [
+        165,
+        659,
+        800,
+        1424
+      ],
+      "crop_path": "slice__0002__p001__MUD-PROPERTIES.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0003",
+      "table_id": "T0003",
+      "sequence": 3,
+      "page_number": 0,
+      "page": 1,
+      "title": "SOLIDS CONTROL",
+      "title_request_raw": "SOLIDS CONTROL",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        1003.7152604166668
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        1003.7152604166668
+      ],
+      "closing_title": "PUMPS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1048.5069444444446,
+        669.6698611111111,
+        1293.3497222222225,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0003__p001__SOLIDS-CONTROL.png",
+      "crop_bbox_with_padding": [
+        794,
+        659,
+        1462,
+        1007
+      ],
+      "crop_path": "slice__0003__p001__SOLIDS-CONTROL.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0004",
+      "table_id": "T0004",
+      "sequence": 4,
+      "page_number": 0,
+      "page": 1,
+      "title": "FORMATION DATA",
+      "title_request_raw": "FORMATION DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        965.7517361111112
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        965.7517361111112
+      ],
+      "closing_title": "DRILLS / BOPS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1598.6805555555557,
+        669.6698611111111,
+        1836.6893055555554,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0004__p001__FORMATION-DATA.png",
+      "crop_bbox_with_padding": [
+        1456,
+        659,
+        1977,
+        969
+      ],
+      "crop_path": "slice__0004__p001__FORMATION-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0005",
+      "table_id": "T0005",
+      "sequence": 5,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLS / BOPS",
+      "title_request_raw": "DRILLS / BOPS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1003.7152604166668
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1231.2384104938271
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1231.2384104938271
+      ],
+      "closing_title": "TIME ANALYSIS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1591.995138888889,
+        973.1073611111112,
+        1782.727638888889,
+        999.357361111111
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0005__p001__DRILLS-BOPS.png",
+      "crop_bbox_with_padding": [
+        1456,
+        963,
+        1977,
+        1234
+      ],
+      "crop_path": "slice__0005__p001__DRILLS-BOPS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0006",
+      "table_id": "T0006",
+      "sequence": 6,
+      "page_number": 0,
+      "page": 1,
+      "title": "PUMPS",
+      "title_request_raw": "PUMPS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1041.6319270833335
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1420.79859375
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1420.79859375
+      ],
+      "closing_title": "BHA DETAILS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        849.7569444444445,
+        1011.024027777778,
+        943.0756944444445,
+        1037.2740277777777
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0006__p001__PUMPS.png",
+      "crop_bbox_with_padding": [
+        794,
+        1001,
+        1462,
+        1424
+      ],
+      "crop_path": "slice__0006__p001__PUMPS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0007",
+      "table_id": "T0007",
+      "sequence": 7,
+      "page_number": 0,
+      "page": 1,
+      "title": "TIME ANALYSIS",
+      "title_request_raw": "TIME ANALYSIS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        1269.1319270833335
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1622.4305555555557,
+        1238.524027777778,
+        1824.7918055555556,
+        1264.7740277777777
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0007__p001__TIME-ANALYSIS.png",
+      "crop_bbox_with_padding": [
+        1456,
+        1228,
+        1977,
+        2600
+      ],
+      "crop_path": "slice__0007__p001__TIME-ANALYSIS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0008",
+      "table_id": "T0008",
+      "sequence": 8,
+      "page_number": 0,
+      "page": 1,
+      "title": "BIT DATA",
+      "title_request_raw": "BIT DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        1458.784704861111
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        2103.8194444444443
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        2103.8194444444443
+      ],
+      "closing_title": "SURVEYS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        408.4027777777778,
+        1428.1768055555558,
+        530.2027777777778,
+        1454.4268055555556
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0008__p001__BIT-DATA.png",
+      "crop_bbox_with_padding": [
+        165,
+        1418,
+        800,
+        2107
+      ],
+      "crop_path": "slice__0008__p001__BIT-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0009",
+      "table_id": "T0009",
+      "sequence": 9,
+      "page_number": 0,
+      "page": 1,
+      "title": "BHA DETAILS",
+      "title_request_raw": "BHA DETAILS --- STRING WEIGHT (Klbf)",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        1458.784704861111
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        2103.8194444444443
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        2368.5912450396827
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_bottom_lane_span",
+      "end_marker": "STRING WEIGHT (Klbf)",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        796.7972274305555,
+        2065.5555381944446,
+        1159.20140625,
+        2103.8194444444443
+      ],
+      "end_marker_direction": "bottom",
+      "end_marker_matched_text": "STRING WEIGHT (Klbf)",
+      "title_text_bbox": [
+        876.8395833333334,
+        1428.1768055555558,
+        1052.2976388888892,
+        1454.4268055555556
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        816.8027777777778,
+        2072.8643055555553,
+        1104.1090277777778,
+        2099.114305555556
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0009__p001__BHA-DETAILS.png",
+      "crop_bbox_with_padding": [
+        794,
+        1418,
+        1462,
+        2107
+      ],
+      "crop_path": "slice__0009__p001__BHA-DETAILS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0010",
+      "table_id": "T0010",
+      "sequence": 10,
+      "page_number": 0,
+      "page": 1,
+      "title": "SURVEYS",
+      "title_request_raw": "SURVEYS --- COMMENTS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        2103.8194444444443,
+        598.1944290123456,
+        2141.3889236111113
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        2103.8194444444443,
+        1459.065535929952,
+        2368.5912450396827
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        2103.8194444444443,
+        598.1944290123456,
+        2368.5912450396827
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "COMMENTS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1159.20140625,
+        2103.8194444444443,
+        1459.065535929952,
+        2141.3889236111113
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "COMMENTS",
+      "title_text_bbox": [
+        181.23125000000002,
+        2110.7809722222223,
+        315.00125,
+        2137.0309722222223
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1239.826388888889,
+        2109.9330555555557,
+        1381.2980555555555,
+        2134.099722222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0010__p001__SURVEYS.png",
+      "crop_bbox_with_padding": [
+        165,
+        2101,
+        1462,
+        2372
+      ],
+      "crop_path": "slice__0010__p001__SURVEYS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0011",
+      "table_id": "T0011",
+      "sequence": 11,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLING TOOLS",
+      "title_request_raw": "DRILLING TOOLS --- HOURS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        2368.5912450396827,
+        598.1944290123456,
+        2406.8750086805558
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        2368.5912450396827,
+        796.7972274305555,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        2368.5912450396827,
+        598.1944290123456,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "HOURS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        598.1944290123456,
+        2368.5912450396827,
+        796.7972274305555,
+        2406.8750086805558
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "HOURS",
+      "title_text_bbox": [
+        176.66666666666669,
+        2376.197638888889,
+        397.4029166666668,
+        2402.447638888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        651.7361111111111,
+        2376.197638888889,
+        745.894861111111,
+        2402.447638888889
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0011__p001__DRILLING-TOOLS.png",
+      "crop_bbox_with_padding": [
+        165,
+        2366,
+        800,
+        2600
+      ],
+      "crop_path": "slice__0011__p001__DRILLING-TOOLS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0012",
+      "table_id": "T0012",
+      "sequence": 12,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLING DATA",
+      "title_request_raw": "DRILLING DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2406.8750086805558
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1027.6736111111113,
+        2376.197638888889,
+        1230.6648611111113,
+        2402.447638888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0012__p001__DRILLING-DATA.png",
+      "crop_bbox_with_padding": [
+        794,
+        2366,
+        1462,
+        2600
+      ],
+      "crop_path": "slice__0012__p001__DRILLING-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0013",
+      "table_id": "T0013",
+      "sequence": 13,
+      "page_number": 1,
+      "page": 2,
+      "title": "FROM",
+      "title_request_raw": "FROM",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        851.3194444444443
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        1430.7986111111109
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        1430.7986111111109
+      ],
+      "closing_title": "PROGRAMME NEXT 24 HRS:",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        189.58333333333334,
+        822.1552777777777,
+        260.5366666666667,
+        846.3219444444445
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0013__p002__FROM.png",
+      "crop_bbox_with_padding": [
+        151,
+        811,
+        2011,
+        1434
+      ],
+      "crop_path": "slice__0013__p002__FROM.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0014",
+      "table_id": "T0014",
+      "sequence": 14,
+      "page_number": 1,
+      "page": 2,
+      "title": "PROGRAMME NEXT 24 HRS:",
+      "title_request_raw": "PROGRAMME NEXT 24 HRS:",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1473.1597743055556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1558.3680555555559
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1558.3680555555559
+      ],
+      "closing_title": "WEATHER",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        158.75,
+        1441.9122222222225,
+        492.0325000000001,
+        1466.078888888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0014__p002__PROGRAMME-NEXT-24-HRS.png",
+      "crop_bbox_with_padding": [
+        151,
+        1428,
+        2011,
+        1561
+      ],
+      "crop_path": "slice__0014__p002__PROGRAMME-NEXT-24-HRS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0015",
+      "table_id": "T0015",
+      "sequence": 15,
+      "page_number": 1,
+      "page": 2,
+      "title": "WEATHER",
+      "title_request_raw": "WEATHER --- WIND SPEED",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1558.3680555555559,
+        1033.9236111111113,
+        1600.6597743055556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1558.3680555555559,
+        2008.2929670698925,
+        1643.3680555555554
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1558.3680555555559,
+        1033.9236111111113,
+        1643.3680555555554
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "WIND SPEED",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1574.5734126984128,
+        1558.3680555555559,
+        1822.0139409722221,
+        1600.6597743055556
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "WIND SPEED",
+      "title_text_bbox": [
+        172.09,
+        1568.578888888889,
+        294.035,
+        1592.7455555555555
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1629.1038888888888,
+        1568.9955555555557,
+        1783.4563888888886,
+        1593.1622222222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0015__p002__WEATHER.png",
+      "crop_bbox_with_padding": [
+        151,
+        1555,
+        2011,
+        1646
+      ],
+      "crop_path": "slice__0015__p002__WEATHER.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0016",
+      "table_id": "T0016",
+      "sequence": 16,
+      "page_number": 1,
+      "page": 2,
+      "title": "BULK STOCK",
+      "title_request_raw": "BULK STOCK --- CAMPlt",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1643.3680555555554,
+        1033.9236111111113,
+        1685.6597222222222
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1643.3680555555554,
+        2008.2929670698925,
+        1728.3680555555554
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1643.3680555555554,
+        1033.9236111111113,
+        1728.3680555555554
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "CAMPlt",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1822.0139409722221,
+        1643.3680555555554,
+        2008.2929670698925,
+        1685.6597222222222
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "CAMPlt",
+      "title_text_bbox": [
+        172.09,
+        1653.578888888889,
+        330.285,
+        1677.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1875.8333333333335,
+        1653.9955555555557,
+        1957.4441666666667,
+        1678.1622222222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0016__p002__BULK-STOCK.png",
+      "crop_bbox_with_padding": [
+        151,
+        1640,
+        2011,
+        1731
+      ],
+      "crop_path": "slice__0016__p002__BULK-STOCK.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0017",
+      "table_id": "T0017",
+      "sequence": 17,
+      "page_number": 1,
+      "page": 2,
+      "title": "PERSONNEL ON RIG",
+      "title_request_raw": "PERSONNEL ON RIG",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        2195.972222222222
+      ],
+      "closing_title": "SUPERVISOR(S)",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        229.59,
+        1738.578888888889,
+        423.1891666666667,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0017__p002__PERSONNEL-ON-RIG.png",
+      "crop_bbox_with_padding": [
+        151,
+        1725,
+        581,
+        2199
+      ],
+      "crop_path": "slice__0017__p002__PERSONNEL-ON-RIG.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0018",
+      "table_id": "T0018",
+      "sequence": 18,
+      "page_number": 1,
+      "page": 2,
+      "title": "TRANSPORTATION",
+      "title_request_raw": "TRANSPORTATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        2195.972222222222
+      ],
+      "closing_title": "SUPERVISOR(S)",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        813.9236111111111,
+        1738.578888888889,
+        1038.3836111111111,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0018__p002__TRANSPORTATION.png",
+      "crop_bbox_with_padding": [
+        575,
+        1725,
+        1288,
+        2199
+      ],
+      "crop_path": "slice__0018__p002__TRANSPORTATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0019",
+      "table_id": "T0019",
+      "sequence": 19,
+      "page_number": 1,
+      "page": 2,
+      "title": "COSTS",
+      "title_request_raw": "COSTS /// L2 D2",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1033.9236111111113,
+        1728.3680555555554,
+        2008.2929670698925,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        1285.2430555555557,
+        1728.3680555555554,
+        2008.2929670698925,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1033.9236111111113,
+        1728.3680555555554,
+        2008.2929670698925,
+        2280.034774305556
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback+txt_line_selectors",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {
+        "L": 2,
+        "D": 2
+      },
+      "line_selector_metadata": {
+        "selectors": {
+          "L": 2,
+          "D": 2
+        },
+        "bbox_before": [
+          1033.9236111111113,
+          1728.3680555555554,
+          2008.2929670698925,
+          2280.034774305556
+        ],
+        "bbox_after": [
+          1285.2430555555557,
+          1728.3680555555554,
+          2008.2929670698925,
+          2195.972222222222
+        ],
+        "selected_lines": {
+          "D": {
+            "coordinate": 2195.972222222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false,
+            "side": "D",
+            "requested_index": 2
+          },
+          "L": {
+            "coordinate": 1285.2430555555557,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 24,
+            "includes_detected_bbox_edge": false,
+            "side": "L",
+            "requested_index": 2
+          }
+        },
+        "vertical_candidates": [
+          {
+            "coordinate": 1033.9236111111113,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 3,
+            "includes_detected_bbox_edge": true
+          },
+          {
+            "coordinate": 1285.2430555555557,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 24,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1574.5734126984128,
+            "coverage_pixels": 381.7709374999997,
+            "coverage_ratio": 0.692031845540799,
+            "segment_count": 16,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1822.0139409722221,
+            "coverage_pixels": 467.60416666666674,
+            "coverage_ratio": 0.8476207658968304,
+            "segment_count": 22,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2008.2929670698925,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 13,
+            "includes_detected_bbox_edge": true
+          }
+        ],
+        "horizontal_candidates": [
+          {
+            "coordinate": 1728.3680555555554,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": true
+          },
+          {
+            "coordinate": 1770.659722222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 6,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1813.159774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1855.659774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1898.1597743055554,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1940.7638368055552,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 6,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1983.2638368055555,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2025.763940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2068.263940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2110.763940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2153.263836805556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2195.972222222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2280.034774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 4,
+            "includes_detected_bbox_edge": true
+          }
+        ]
+      },
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1513.6805555555557,
+        1738.578888888889,
+        1596.8380555555555,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0019__p002__COSTS.png",
+      "crop_bbox_with_padding": [
+        1282,
+        1725,
+        2011,
+        2199
+      ],
+      "crop_path": "slice__0019__p002__COSTS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0020",
+      "table_id": "T0020",
+      "sequence": 20,
+      "page_number": 1,
+      "page": 2,
+      "title": "SUPERVISOR(S)",
+      "title_request_raw": "SUPERVISOR(S) --- RIG MANAGER",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        2195.972222222222,
+        1033.9236111111113,
+        2280.034774305556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        2195.972222222222,
+        2008.2929670698925,
+        2280.034774305556
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        2195.972222222222,
+        1033.9236111111113,
+        2280.034774305556
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "RIG MANAGER",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1285.2430555555557,
+        2195.972222222222,
+        1574.5734126984128,
+        2280.034774305556
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "RIG MANAGER",
+      "title_text_bbox": [
+        195.0,
+        2224.9330555555557,
+        386.2308333333333,
+        2249.099722222222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1344.4097222222222,
+        2226.599722222222,
+        1518.4822222222222,
+        2250.766388888889
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0020__p002__SUPERVISORS.png",
+      "crop_bbox_with_padding": [
+        151,
+        2193,
+        2011,
+        2283
+      ],
+      "crop_path": "slice__0020__p002__SUPERVISORS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0021",
+      "table_id": "T0021",
+      "sequence": 21,
+      "page_number": 2,
+      "page": 3,
+      "title": "HSE",
+      "title_request_raw": "HSE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        523.2638773148149
+      ],
+      "table_bbox": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        1842.2221788194447
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        1842.2221788194447
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        469.65277777777777,
+        475.8190277777779,
+        518.4115277777778,
+        499.569027777778
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0021__p003__HSE.png",
+      "crop_bbox_with_padding": [
+        272,
+        450,
+        1849,
+        1845
+      ],
+      "crop_path": "slice__0021__p003__HSE.png"
+    }
+  ],
+  "table_count": 21,
+  "trailing_content_slices": [
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0001",
+      "sequence": 22,
+      "page_number": 0,
+      "page": 1,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        159.87037037037035,
+        2597.2917013888887,
+        1982.2029649758454,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 2597.2917013888887,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 1 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1848.7500000000002,
+          2600.82125,
+          1964.6875000000002,
+          2622.9045833333334
+        ]
+      ],
+      "crop_filename": "slice__0022__p001__remaining-content.png",
+      "crop_bbox_with_padding": [
+        157,
+        2594,
+        1985,
+        2750
+      ],
+      "crop_path": "slice__0022__p001__remaining-content.png"
+    },
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0002",
+      "sequence": 23,
+      "page_number": 1,
+      "page": 2,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        145.79032258064515,
+        2280.034774305556,
+        2016.2929670698925,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 2280.034774305556,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 2 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1851.25,
+          2289.5163888888887,
+          1978.0525,
+          2313.6830555555557
+        ]
+      ],
+      "crop_filename": "slice__0023__p002__remaining-content.png",
+      "crop_bbox_with_padding": [
+        143,
+        2277,
+        2019,
+        2750
+      ],
+      "crop_path": "slice__0023__p002__remaining-content.png"
+    },
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0003",
+      "sequence": 24,
+      "page_number": 2,
+      "page": 3,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        267.23148533950615,
+        1842.2221788194447,
+        1853.6481867283953,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 1842.2221788194447,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 3 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1709.9305555555554,
+          1846.4093055555554,
+          1835.9005555555557,
+          1870.1593055555554
+        ]
+      ],
+      "crop_filename": "slice__0024__p003__remaining-content.png",
+      "crop_bbox_with_padding": [
+        264,
+        1839,
+        1857,
+        2750
+      ],
+      "crop_path": "slice__0024__p003__remaining-content.png"
+    }
+  ],
+  "trailing_content_count": 3,
+  "all_slices": [
+    {
+      "record_type": "table",
+      "slice_id": "T0001",
+      "table_id": "T0001",
+      "sequence": 1,
+      "page_number": 0,
+      "page": 1,
+      "title": "WELL",
+      "title_request_raw": "WELL",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        444.3749930555555
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        661.8402604166668
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        284.9999999999998,
+        1974.2029649758454,
+        661.8402604166668
+      ],
+      "closing_title": "MUD PROPERTIES",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        314.1479166666667,
+        311.2670833333332,
+        397.43916666666667,
+        337.5170833333334
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0001__p001__WELL.png",
+      "crop_bbox_with_padding": [
+        165,
+        282,
+        1977,
+        665
+      ],
+      "crop_path": "slice__0001__p001__WELL.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0002",
+      "table_id": "T0002",
+      "sequence": 2,
+      "page_number": 0,
+      "page": 1,
+      "title": "MUD PROPERTIES",
+      "title_request_raw": "MUD PROPERTIES --- ADDITIVES",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        661.8402604166668,
+        598.1944290123456,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        661.8402604166668,
+        796.7972274305555,
+        1420.79859375
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        661.8402604166668,
+        598.1944290123456,
+        1420.79859375
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "ADDITIVES",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        598.1944290123456,
+        661.8402604166668,
+        796.7972274305555,
+        700.2777604166669
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "ADDITIVES",
+      "title_text_bbox": [
+        266.6666666666667,
+        669.6698611111111,
+        502.41791666666666,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        628.8194444444445,
+        669.6698611111111,
+        768.3644444444445,
+        695.9198611111112
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0002__p001__MUD-PROPERTIES.png",
+      "crop_bbox_with_padding": [
+        165,
+        659,
+        800,
+        1424
+      ],
+      "crop_path": "slice__0002__p001__MUD-PROPERTIES.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0003",
+      "table_id": "T0003",
+      "sequence": 3,
+      "page_number": 0,
+      "page": 1,
+      "title": "SOLIDS CONTROL",
+      "title_request_raw": "SOLIDS CONTROL",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        1003.7152604166668
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        661.8402604166668,
+        1459.065535929952,
+        1003.7152604166668
+      ],
+      "closing_title": "PUMPS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1048.5069444444446,
+        669.6698611111111,
+        1293.3497222222225,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0003__p001__SOLIDS-CONTROL.png",
+      "crop_bbox_with_padding": [
+        794,
+        659,
+        1462,
+        1007
+      ],
+      "crop_path": "slice__0003__p001__SOLIDS-CONTROL.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0004",
+      "table_id": "T0004",
+      "sequence": 4,
+      "page_number": 0,
+      "page": 1,
+      "title": "FORMATION DATA",
+      "title_request_raw": "FORMATION DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        700.2777604166669
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        965.7517361111112
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        661.8402604166668,
+        1974.2029649758454,
+        965.7517361111112
+      ],
+      "closing_title": "DRILLS / BOPS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1598.6805555555557,
+        669.6698611111111,
+        1836.6893055555554,
+        695.9198611111112
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0004__p001__FORMATION-DATA.png",
+      "crop_bbox_with_padding": [
+        1456,
+        659,
+        1977,
+        969
+      ],
+      "crop_path": "slice__0004__p001__FORMATION-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0005",
+      "table_id": "T0005",
+      "sequence": 5,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLS / BOPS",
+      "title_request_raw": "DRILLS / BOPS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1003.7152604166668
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1231.2384104938271
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        965.7517361111112,
+        1974.2029649758454,
+        1231.2384104938271
+      ],
+      "closing_title": "TIME ANALYSIS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1591.995138888889,
+        973.1073611111112,
+        1782.727638888889,
+        999.357361111111
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0005__p001__DRILLS-BOPS.png",
+      "crop_bbox_with_padding": [
+        1456,
+        963,
+        1977,
+        1234
+      ],
+      "crop_path": "slice__0005__p001__DRILLS-BOPS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0006",
+      "table_id": "T0006",
+      "sequence": 6,
+      "page_number": 0,
+      "page": 1,
+      "title": "PUMPS",
+      "title_request_raw": "PUMPS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1041.6319270833335
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1420.79859375
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        1003.7152604166668,
+        1459.065535929952,
+        1420.79859375
+      ],
+      "closing_title": "BHA DETAILS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        849.7569444444445,
+        1011.024027777778,
+        943.0756944444445,
+        1037.2740277777777
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0006__p001__PUMPS.png",
+      "crop_bbox_with_padding": [
+        794,
+        1001,
+        1462,
+        1424
+      ],
+      "crop_path": "slice__0006__p001__PUMPS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0007",
+      "table_id": "T0007",
+      "sequence": 7,
+      "page_number": 0,
+      "page": 1,
+      "title": "TIME ANALYSIS",
+      "title_request_raw": "TIME ANALYSIS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        1269.1319270833335
+      ],
+      "table_bbox": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1459.065535929952,
+        1231.2384104938271,
+        1974.2029649758454,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1622.4305555555557,
+        1238.524027777778,
+        1824.7918055555556,
+        1264.7740277777777
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0007__p001__TIME-ANALYSIS.png",
+      "crop_bbox_with_padding": [
+        1456,
+        1228,
+        1977,
+        2600
+      ],
+      "crop_path": "slice__0007__p001__TIME-ANALYSIS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0008",
+      "table_id": "T0008",
+      "sequence": 8,
+      "page_number": 0,
+      "page": 1,
+      "title": "BIT DATA",
+      "title_request_raw": "BIT DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        1458.784704861111
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        2103.8194444444443
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        1420.79859375,
+        796.7972274305555,
+        2103.8194444444443
+      ],
+      "closing_title": "SURVEYS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        408.4027777777778,
+        1428.1768055555558,
+        530.2027777777778,
+        1454.4268055555556
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0008__p001__BIT-DATA.png",
+      "crop_bbox_with_padding": [
+        165,
+        1418,
+        800,
+        2107
+      ],
+      "crop_path": "slice__0008__p001__BIT-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0009",
+      "table_id": "T0009",
+      "sequence": 9,
+      "page_number": 0,
+      "page": 1,
+      "title": "BHA DETAILS",
+      "title_request_raw": "BHA DETAILS --- STRING WEIGHT (Klbf)",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        1458.784704861111
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        2103.8194444444443
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        1420.79859375,
+        1459.065535929952,
+        2368.5912450396827
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_bottom_lane_span",
+      "end_marker": "STRING WEIGHT (Klbf)",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        796.7972274305555,
+        2065.5555381944446,
+        1159.20140625,
+        2103.8194444444443
+      ],
+      "end_marker_direction": "bottom",
+      "end_marker_matched_text": "STRING WEIGHT (Klbf)",
+      "title_text_bbox": [
+        876.8395833333334,
+        1428.1768055555558,
+        1052.2976388888892,
+        1454.4268055555556
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        816.8027777777778,
+        2072.8643055555553,
+        1104.1090277777778,
+        2099.114305555556
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0009__p001__BHA-DETAILS.png",
+      "crop_bbox_with_padding": [
+        794,
+        1418,
+        1462,
+        2107
+      ],
+      "crop_path": "slice__0009__p001__BHA-DETAILS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0010",
+      "table_id": "T0010",
+      "sequence": 10,
+      "page_number": 0,
+      "page": 1,
+      "title": "SURVEYS",
+      "title_request_raw": "SURVEYS --- COMMENTS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        2103.8194444444443,
+        598.1944290123456,
+        2141.3889236111113
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        2103.8194444444443,
+        1459.065535929952,
+        2368.5912450396827
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        2103.8194444444443,
+        598.1944290123456,
+        2368.5912450396827
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "COMMENTS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1159.20140625,
+        2103.8194444444443,
+        1459.065535929952,
+        2141.3889236111113
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "COMMENTS",
+      "title_text_bbox": [
+        181.23125000000002,
+        2110.7809722222223,
+        315.00125,
+        2137.0309722222223
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1239.826388888889,
+        2109.9330555555557,
+        1381.2980555555555,
+        2134.099722222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0010__p001__SURVEYS.png",
+      "crop_bbox_with_padding": [
+        165,
+        2101,
+        1462,
+        2372
+      ],
+      "crop_path": "slice__0010__p001__SURVEYS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0011",
+      "table_id": "T0011",
+      "sequence": 11,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLING TOOLS",
+      "title_request_raw": "DRILLING TOOLS --- HOURS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        167.87037037037035,
+        2368.5912450396827,
+        598.1944290123456,
+        2406.8750086805558
+      ],
+      "table_bbox": [
+        167.87037037037035,
+        2368.5912450396827,
+        796.7972274305555,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        167.87037037037035,
+        2368.5912450396827,
+        598.1944290123456,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "HOURS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        598.1944290123456,
+        2368.5912450396827,
+        796.7972274305555,
+        2406.8750086805558
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "HOURS",
+      "title_text_bbox": [
+        176.66666666666669,
+        2376.197638888889,
+        397.4029166666668,
+        2402.447638888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        651.7361111111111,
+        2376.197638888889,
+        745.894861111111,
+        2402.447638888889
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0011__p001__DRILLING-TOOLS.png",
+      "crop_bbox_with_padding": [
+        165,
+        2366,
+        800,
+        2600
+      ],
+      "crop_path": "slice__0011__p001__DRILLING-TOOLS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0012",
+      "table_id": "T0012",
+      "sequence": 12,
+      "page_number": 0,
+      "page": 1,
+      "title": "DRILLING DATA",
+      "title_request_raw": "DRILLING DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2406.8750086805558
+      ],
+      "table_bbox": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2597.2917013888887
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        796.7972274305555,
+        2368.5912450396827,
+        1459.065535929952,
+        2597.2917013888887
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1027.6736111111113,
+        2376.197638888889,
+        1230.6648611111113,
+        2402.447638888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0012__p001__DRILLING-DATA.png",
+      "crop_bbox_with_padding": [
+        794,
+        2366,
+        1462,
+        2600
+      ],
+      "crop_path": "slice__0012__p001__DRILLING-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0013",
+      "table_id": "T0013",
+      "sequence": 13,
+      "page_number": 1,
+      "page": 2,
+      "title": "FROM",
+      "title_request_raw": "FROM",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        851.3194444444443
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        1430.7986111111109
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        814.4444444444445,
+        2008.2929670698925,
+        1430.7986111111109
+      ],
+      "closing_title": "PROGRAMME NEXT 24 HRS:",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        189.58333333333334,
+        822.1552777777777,
+        260.5366666666667,
+        846.3219444444445
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0013__p002__FROM.png",
+      "crop_bbox_with_padding": [
+        151,
+        811,
+        2011,
+        1434
+      ],
+      "crop_path": "slice__0013__p002__FROM.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0014",
+      "table_id": "T0014",
+      "sequence": 14,
+      "page_number": 1,
+      "page": 2,
+      "title": "PROGRAMME NEXT 24 HRS:",
+      "title_request_raw": "PROGRAMME NEXT 24 HRS:",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1473.1597743055556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1558.3680555555559
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1430.7986111111109,
+        2008.2929670698925,
+        1558.3680555555559
+      ],
+      "closing_title": "WEATHER",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        158.75,
+        1441.9122222222225,
+        492.0325000000001,
+        1466.078888888889
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0014__p002__PROGRAMME-NEXT-24-HRS.png",
+      "crop_bbox_with_padding": [
+        151,
+        1428,
+        2011,
+        1561
+      ],
+      "crop_path": "slice__0014__p002__PROGRAMME-NEXT-24-HRS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0015",
+      "table_id": "T0015",
+      "sequence": 15,
+      "page_number": 1,
+      "page": 2,
+      "title": "WEATHER",
+      "title_request_raw": "WEATHER --- WIND SPEED",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1558.3680555555559,
+        1033.9236111111113,
+        1600.6597743055556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1558.3680555555559,
+        2008.2929670698925,
+        1643.3680555555554
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1558.3680555555559,
+        1033.9236111111113,
+        1643.3680555555554
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "WIND SPEED",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1574.5734126984128,
+        1558.3680555555559,
+        1822.0139409722221,
+        1600.6597743055556
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "WIND SPEED",
+      "title_text_bbox": [
+        172.09,
+        1568.578888888889,
+        294.035,
+        1592.7455555555555
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1629.1038888888888,
+        1568.9955555555557,
+        1783.4563888888886,
+        1593.1622222222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0015__p002__WEATHER.png",
+      "crop_bbox_with_padding": [
+        151,
+        1555,
+        2011,
+        1646
+      ],
+      "crop_path": "slice__0015__p002__WEATHER.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0016",
+      "table_id": "T0016",
+      "sequence": 16,
+      "page_number": 1,
+      "page": 2,
+      "title": "BULK STOCK",
+      "title_request_raw": "BULK STOCK --- CAMPlt",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1643.3680555555554,
+        1033.9236111111113,
+        1685.6597222222222
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1643.3680555555554,
+        2008.2929670698925,
+        1728.3680555555554
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1643.3680555555554,
+        1033.9236111111113,
+        1728.3680555555554
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "CAMPlt",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1822.0139409722221,
+        1643.3680555555554,
+        2008.2929670698925,
+        1685.6597222222222
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "CAMPlt",
+      "title_text_bbox": [
+        172.09,
+        1653.578888888889,
+        330.285,
+        1677.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1875.8333333333335,
+        1653.9955555555557,
+        1957.4441666666667,
+        1678.1622222222222
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0016__p002__BULK-STOCK.png",
+      "crop_bbox_with_padding": [
+        151,
+        1640,
+        2011,
+        1731
+      ],
+      "crop_path": "slice__0016__p002__BULK-STOCK.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0017",
+      "table_id": "T0017",
+      "sequence": 17,
+      "page_number": 1,
+      "page": 2,
+      "title": "PERSONNEL ON RIG",
+      "title_request_raw": "PERSONNEL ON RIG",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        1728.3680555555554,
+        577.5694270833333,
+        2195.972222222222
+      ],
+      "closing_title": "SUPERVISOR(S)",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        229.59,
+        1738.578888888889,
+        423.1891666666667,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0017__p002__PERSONNEL-ON-RIG.png",
+      "crop_bbox_with_padding": [
+        151,
+        1725,
+        581,
+        2199
+      ],
+      "crop_path": "slice__0017__p002__PERSONNEL-ON-RIG.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0018",
+      "table_id": "T0018",
+      "sequence": 18,
+      "page_number": 1,
+      "page": 2,
+      "title": "TRANSPORTATION",
+      "title_request_raw": "TRANSPORTATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        577.5694270833333,
+        1728.3680555555554,
+        1285.2430555555557,
+        2195.972222222222
+      ],
+      "closing_title": "SUPERVISOR(S)",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        813.9236111111111,
+        1738.578888888889,
+        1038.3836111111111,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0018__p002__TRANSPORTATION.png",
+      "crop_bbox_with_padding": [
+        575,
+        1725,
+        1288,
+        2199
+      ],
+      "crop_path": "slice__0018__p002__TRANSPORTATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0019",
+      "table_id": "T0019",
+      "sequence": 19,
+      "page_number": 1,
+      "page": 2,
+      "title": "COSTS",
+      "title_request_raw": "COSTS /// L2 D2",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1033.9236111111113,
+        1728.3680555555554,
+        2008.2929670698925,
+        1770.6597222222222
+      ],
+      "table_bbox": [
+        1285.2430555555557,
+        1728.3680555555554,
+        2008.2929670698925,
+        2195.972222222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1033.9236111111113,
+        1728.3680555555554,
+        2008.2929670698925,
+        2280.034774305556
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback+txt_line_selectors",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {
+        "L": 2,
+        "D": 2
+      },
+      "line_selector_metadata": {
+        "selectors": {
+          "L": 2,
+          "D": 2
+        },
+        "bbox_before": [
+          1033.9236111111113,
+          1728.3680555555554,
+          2008.2929670698925,
+          2280.034774305556
+        ],
+        "bbox_after": [
+          1285.2430555555557,
+          1728.3680555555554,
+          2008.2929670698925,
+          2195.972222222222
+        ],
+        "selected_lines": {
+          "D": {
+            "coordinate": 2195.972222222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false,
+            "side": "D",
+            "requested_index": 2
+          },
+          "L": {
+            "coordinate": 1285.2430555555557,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 24,
+            "includes_detected_bbox_edge": false,
+            "side": "L",
+            "requested_index": 2
+          }
+        },
+        "vertical_candidates": [
+          {
+            "coordinate": 1033.9236111111113,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 3,
+            "includes_detected_bbox_edge": true
+          },
+          {
+            "coordinate": 1285.2430555555557,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 24,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1574.5734126984128,
+            "coverage_pixels": 381.7709374999997,
+            "coverage_ratio": 0.692031845540799,
+            "segment_count": 16,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1822.0139409722221,
+            "coverage_pixels": 467.60416666666674,
+            "coverage_ratio": 0.8476207658968304,
+            "segment_count": 22,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2008.2929670698925,
+            "coverage_pixels": 551.6667187500004,
+            "coverage_ratio": 1.0,
+            "segment_count": 13,
+            "includes_detected_bbox_edge": true
+          }
+        ],
+        "horizontal_candidates": [
+          {
+            "coordinate": 1728.3680555555554,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": true
+          },
+          {
+            "coordinate": 1770.659722222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 6,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1813.159774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1855.659774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1898.1597743055554,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1940.7638368055552,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 6,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 1983.2638368055555,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2025.763940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2068.263940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2110.763940972222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2153.263836805556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 8,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2195.972222222222,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 7,
+            "includes_detected_bbox_edge": false
+          },
+          {
+            "coordinate": 2280.034774305556,
+            "coverage_pixels": 974.3693559587812,
+            "coverage_ratio": 1.0,
+            "segment_count": 4,
+            "includes_detected_bbox_edge": true
+          }
+        ]
+      },
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1513.6805555555557,
+        1738.578888888889,
+        1596.8380555555555,
+        1762.7455555555557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0019__p002__COSTS.png",
+      "crop_bbox_with_padding": [
+        1282,
+        1725,
+        2011,
+        2199
+      ],
+      "crop_path": "slice__0019__p002__COSTS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0020",
+      "table_id": "T0020",
+      "sequence": 20,
+      "page_number": 1,
+      "page": 2,
+      "title": "SUPERVISOR(S)",
+      "title_request_raw": "SUPERVISOR(S) --- RIG MANAGER",
+      "occurrence_index": 0,
+      "title_bbox": [
+        153.79032258064515,
+        2195.972222222222,
+        1033.9236111111113,
+        2280.034774305556
+      ],
+      "table_bbox": [
+        153.79032258064515,
+        2195.972222222222,
+        2008.2929670698925,
+        2280.034774305556
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        153.79032258064515,
+        2195.972222222222,
+        1033.9236111111113,
+        2280.034774305556
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "RIG MANAGER",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1285.2430555555557,
+        2195.972222222222,
+        1574.5734126984128,
+        2280.034774305556
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "RIG MANAGER",
+      "title_text_bbox": [
+        195.0,
+        2224.9330555555557,
+        386.2308333333333,
+        2249.099722222222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1344.4097222222222,
+        2226.599722222222,
+        1518.4822222222222,
+        2250.766388888889
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0020__p002__SUPERVISORS.png",
+      "crop_bbox_with_padding": [
+        151,
+        2193,
+        2011,
+        2283
+      ],
+      "crop_path": "slice__0020__p002__SUPERVISORS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0021",
+      "table_id": "T0021",
+      "sequence": 21,
+      "page_number": 2,
+      "page": 3,
+      "title": "HSE",
+      "title_request_raw": "HSE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        523.2638773148149
+      ],
+      "table_bbox": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        1842.2221788194447
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        275.23148533950615,
+        452.63424768518513,
+        1845.6481867283953,
+        1842.2221788194447
+      ],
+      "closing_title": null,
+      "boundary_source": "lane_cell_fallback",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        469.65277777777777,
+        475.8190277777779,
+        518.4115277777778,
+        499.569027777778
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0021__p003__HSE.png",
+      "crop_bbox_with_padding": [
+        272,
+        450,
+        1849,
+        1845
+      ],
+      "crop_path": "slice__0021__p003__HSE.png"
+    },
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0001",
+      "sequence": 22,
+      "page_number": 0,
+      "page": 1,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        159.87037037037035,
+        2597.2917013888887,
+        1982.2029649758454,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 2597.2917013888887,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 1 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1848.7500000000002,
+          2600.82125,
+          1964.6875000000002,
+          2622.9045833333334
+        ]
+      ],
+      "crop_filename": "slice__0022__p001__remaining-content.png",
+      "crop_bbox_with_padding": [
+        157,
+        2594,
+        1985,
+        2750
+      ],
+      "crop_path": "slice__0022__p001__remaining-content.png"
+    },
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0002",
+      "sequence": 23,
+      "page_number": 1,
+      "page": 2,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        145.79032258064515,
+        2280.034774305556,
+        2016.2929670698925,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 2280.034774305556,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 2 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1851.25,
+          2289.5163888888887,
+          1978.0525,
+          2313.6830555555557
+        ]
+      ],
+      "crop_filename": "slice__0023__p002__remaining-content.png",
+      "crop_bbox_with_padding": [
+        143,
+        2277,
+        2019,
+        2750
+      ],
+      "crop_path": "slice__0023__p002__remaining-content.png"
+    },
+    {
+      "record_type": "trailing_content",
+      "slice_id": "R0003",
+      "sequence": 24,
+      "page_number": 2,
+      "page": 3,
+      "title": "REMAINING PAGE CONTENT",
+      "table_bbox": [
+        267.23148533950615,
+        1842.2221788194447,
+        1853.6481867283953,
+        2750.0
+      ],
+      "boundary_source": "remaining_text_below_lowest_table",
+      "crop_to_page_bottom": true,
+      "lowest_table_bottom": 1842.2221788194447,
+      "text_segment_count": 1,
+      "alnum_character_count": 8,
+      "detected_text": [
+        "Page 3 of 3"
+      ],
+      "detected_text_bboxes": [
+        [
+          1709.9305555555554,
+          1846.4093055555554,
+          1835.9005555555557,
+          1870.1593055555554
+        ]
+      ],
+      "crop_filename": "slice__0024__p003__remaining-content.png",
+      "crop_bbox_with_padding": [
+        264,
+        1839,
+        1857,
+        2750
+      ],
+      "crop_path": "slice__0024__p003__remaining-content.png"
+    }
+  ],
+  "slice_count": 24
+}

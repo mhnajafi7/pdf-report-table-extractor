@@ -1,0 +1,18 @@
+[page 1]
+Well ID
+Report No
+Operations Summary
+Management Summary
+Comments
+
+
+[page 2]
+Report
+Bit/BHA/Workstring Information
+Rig Information
+Solids Control Information
+Bulk Inventory
+Safety Information
+
+[page 3]
+Weather Information
