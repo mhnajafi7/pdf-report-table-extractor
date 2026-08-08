@@ -382,7 +382,33 @@ cache__text_layer.json
 Stores extracted text and coordinates so repeated runs can reuse the PDF text layer.
 
 ---
+## References and Data Sources
 
+### OCR Projects
+
+The extracted table image was evaluated using outputs from the following OCR and document-understanding projects:
+
+- [AllenAI olmOCR](https://github.com/allenai/olmocr)
+- [Datalab Chandra OCR](https://github.com/datalab-to/chandra)
+- [MinerU](https://github.com/opendatalab/MinerU)
+- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+- [Baidu Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)
+
+
+### Document Sources
+
+The sample documents used to develop and demonstrate the extraction pipeline were obtained from the following sources:
+
+1. Federal Aviation Administration, *FAA Form 337: Major Repair and Alteration*, 2006.
+2. D. G. Jackson, *Annual Report for EL 18/91 – Mangana, 30 May 1999 to 29 May 2000*, Defiance Mining NL, 2000.
+3. John McLennan, *Utah FORGE: Well 78B-32 Daily Drilling Reports and Logs*, 2021.
+4. Central Petroleum, *Palm Valley 13 Well Completion Report: Appendix F – Daily Drilling Reports*, 2018.
+5. Teikoku Oil, *Sunbird-1 Well Completion Report: Appendix 1 – Daily Drilling Reports*, 1994.
+6. Tri-Star Energy, *New Crown 1 Well Completion Report: Appendix 8 – Daily Drilling Reports*, 2014.
+7. Armour Energy, *Myrtle Basin 1 Well Completion Report Appendices: Daily Drilling Report*, 2013.
+
+
+---
 
 ## Limitations
 
