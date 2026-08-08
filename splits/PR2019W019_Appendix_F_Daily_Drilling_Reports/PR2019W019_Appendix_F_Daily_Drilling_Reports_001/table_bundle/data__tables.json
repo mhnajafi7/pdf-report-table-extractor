@@ -1,0 +1,2502 @@
+{
+  "pipeline": "single_folder_table_bundle_v9_txt_line_selectors",
+  "pipeline_version": "9.0.0",
+  "source_pdf": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/test2/tst2.pdf",
+  "source_titles_txt": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/test2/tst2.txt",
+  "output_folder": "/Users/mohammadhosseinnajafi/Desktop/justafolder/txtprocess/output/tst2__table_bundle",
+  "output_naming": {
+    "crop_pattern": "slice__NNNN__pPPP__title.png",
+    "trailing_crop_pattern": "slice__NNNN__pPPP__remaining-content.png",
+    "all_tables_map": "map__all_tables.pdf",
+    "table_metadata": "data__tables.json",
+    "text_cache": "cache__text_layer.json"
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "pdfplumber": "0.11.9",
+    "pdf2image": "1.17.0",
+    "Pillow": "10.4.0"
+  },
+  "config": {
+    "target_dpi": 250,
+    "pdf_coordinate_dpi": 72,
+    "line_y_tolerance_points": 3.0,
+    "horizontal_gap_split_points": 10.0,
+    "min_text_segments_on_titled_page": 3,
+    "use_text_cache": true,
+    "force_text_cache": false,
+    "crop_padding_pixels": 3,
+    "table_min_x_overlap_pixels": 5.0,
+    "table_min_x_overlap_ratio": 0.05,
+    "min_text_coverage_for_cell_match": 0.35,
+    "auto_expand_title_width": true,
+    "column_guide_min_titles": 2,
+    "column_guide_min_envelope_coverage": 0.45,
+    "column_guide_min_center_span": 0.25,
+    "title_row_min_vertical_overlap": 0.6,
+    "marker_lane_min_vertical_overlap": 0.4,
+    "title_border_tolerance_pixels": 3.0,
+    "guide_border_vertical_margin_pixels": 15.0,
+    "manual_line_coordinate_tolerance_pixels": 3.0,
+    "manual_line_min_coverage_ratio": 0.2,
+    "auto_expand_pre_guide_singletons": true,
+    "pre_guide_y_tolerance_pixels": 4.0,
+    "pre_guide_singleton_min_width_ratio": 0.2,
+    "allow_missing_titles": false,
+    "extract_trailing_content": true,
+    "trailing_content_min_gap_pixels": 1.0,
+    "trailing_content_min_alnum_characters": 3,
+    "trailing_content_top_padding_pixels": 8,
+    "trailing_content_bottom_padding_pixels": 24,
+    "trailing_content_horizontal_padding_pixels": 8,
+    "trailing_content_use_page_content_width": true,
+    "trailing_content_crop_to_page_bottom": true
+  },
+  "cache": {
+    "hit": false,
+    "signature": {
+      "pdf_sha256": "079184df8f97138c4dbe450de7fc531c32ce301cb7b0aa3e99c9fea286abe622",
+      "pdf_size": 318594,
+      "pdf_mtime_ns": 1785677821506523977,
+      "page_count": 1,
+      "target_dpi": 250,
+      "pdf_coordinate_dpi": 72,
+      "line_y_tolerance_points": 3.0,
+      "horizontal_gap_split_points": 10.0,
+      "pdfplumber_version": "0.11.9",
+      "text_cache_schema": 2,
+      "pipeline_version": "9.0.0"
+    }
+  },
+  "page_count": 1,
+  "titles_per_page": [
+    [
+      {
+        "title": "DAILY DRILLING REPORT",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "DAILY DRILLING REPORT"
+      },
+      {
+        "title": "BIT INFORMATION",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "BIT INFORMATION"
+      },
+      {
+        "title": "BHA # 1",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "BHA # 1"
+      },
+      {
+        "title": "MUD PROPERTIES",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "MUD PROPERTIES"
+      },
+      {
+        "title": "OPERATION",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "OPERATION"
+      },
+      {
+        "title": "FLOW DATA",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "FLOW DATA"
+      },
+      {
+        "title": "PUMP DATA",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "PUMP DATA"
+      },
+      {
+        "title": "SURVEYS",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "SURVEYS"
+      },
+      {
+        "title": "CHEMICAL USAGE",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "CHEMICAL USAGE"
+      },
+      {
+        "title": "PRODUCTS: USED | REC | ON SITE",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "PRODUCTS: USED | REC | ON SITE"
+      },
+      {
+        "title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "HOURLY OPERATIONS SUMMARY 0000 to 2400"
+      },
+      {
+        "title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "raw": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18"
+      },
+      {
+        "title": "MAXIMUM GAS",
+        "end_marker": "TRIP GAS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "raw": "MAXIMUM GAS --- TRIP GAS"
+      }
+    ]
+  ],
+  "text_segments_per_page": [
+    288
+  ],
+  "cells_per_page": [
+    453
+  ],
+  "missing_titles": [],
+  "missing_end_markers": [],
+  "column_lanes_by_page": {
+    "1": [
+      [
+        331.4191844135803,
+        745.2401759068215
+      ],
+      [
+        745.2401759068215,
+        1119.1334548605967
+      ],
+      [
+        1119.1334548605967,
+        1442.0035263236111
+      ],
+      [
+        1442.0035263236111,
+        1857.5541578703703
+      ]
+    ]
+  },
+  "guide_top_by_page": {
+    "1": 629.7472954545455
+  },
+  "title_cells": {
+    "1": [
+      {
+        "title": "DAILY DRILLING REPORT",
+        "title_request_raw": "DAILY DRILLING REPORT",
+        "title_index": 0,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "DAILY DRILLING REPORT",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          192.271380952381,
+          1857.5541578703703,
+          279.65364861111124
+        ],
+        "original_bbox": [
+          745.2401759068215,
+          192.271380952381,
+          1398.7854443869048,
+          279.65364861111124
+        ],
+        "matched_text": "DAILY DRILLING REPORT",
+        "text_bbox": [
+          863.1490474166667,
+          219.08229771155558,
+          1283.2703320246667,
+          252.9193857115557
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.459827272384829,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          1857.5541578703703
+        ],
+        "auto_width_expanded": true,
+        "pre_guide_full_width": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "BIT INFORMATION",
+        "title_request_raw": "BIT INFORMATION",
+        "title_index": 1,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "BIT INFORMATION",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          629.7472954545455,
+          745.2401759068215,
+          668.1134741830064
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          629.7472954545455,
+          745.2401759068215,
+          668.1134741830064
+        ],
+        "matched_text": "BIT INFORMATION",
+        "text_bbox": [
+          432.6367220555556,
+          640.7466945202221,
+          645.4240697008888,
+          664.7146318535554
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.468869607183718,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          745.2401759068215
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "BHA # 1",
+        "title_request_raw": "BHA # 1",
+        "title_index": 2,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "BHA # 1",
+          0
+        ],
+        "bbox": [
+          745.2401759068215,
+          629.7472954545455,
+          1119.1334548605967,
+          668.1134741830064
+        ],
+        "original_bbox": [
+          745.2401759068215,
+          629.7472954545455,
+          1119.1334548605967,
+          668.1134741830064
+        ],
+        "matched_text": "BHA # 1",
+        "text_bbox": [
+          887.8219240833333,
+          640.0417551868887,
+          978.971989762,
+          664.009692520222
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.434338838988001,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          745.2401759068215,
+          1119.1334548605967
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "MUD PROPERTIES",
+        "title_request_raw": "MUD PROPERTIES",
+        "title_index": 3,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "MUD PROPERTIES",
+          0
+        ],
+        "bbox": [
+          1119.1334548605967,
+          629.7472954545455,
+          1442.0035263236111,
+          668.1134741830064
+        ],
+        "original_bbox": [
+          1119.1334548605967,
+          629.7472954545455,
+          1442.0035263236111,
+          668.1134741830064
+        ],
+        "matched_text": "MUD PROPERTIES",
+        "text_bbox": [
+          1174.4385080277777,
+          640.0417551868887,
+          1389.1912265344445,
+          664.009692520222
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.475933828637396,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1119.1334548605967,
+          1442.0035263236111
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "OPERATION",
+        "title_request_raw": "OPERATION",
+        "title_index": 4,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "OPERATION",
+          0
+        ],
+        "bbox": [
+          1442.0035263236111,
+          629.7472954545455,
+          1857.5541578703703,
+          668.1134741830064
+        ],
+        "original_bbox": [
+          1442.0035263236111,
+          629.7472954545455,
+          1670.267600268116,
+          668.1134741830064
+        ],
+        "matched_text": "OPERATION",
+        "text_bbox": [
+          1446.9856777777777,
+          640.0417551868887,
+          1587.941117235111,
+          664.009692520222
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.474077695413341,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1442.0035263236111,
+          1857.5541578703703
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": true,
+        "layout_constraints": []
+      },
+      {
+        "title": "FLOW DATA",
+        "title_request_raw": "FLOW DATA",
+        "title_index": 5,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "FLOW DATA",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          1091.192447427399,
+          745.2401759068215,
+          1119.40971397703
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          1091.192447427399,
+          745.2401759068215,
+          1119.40971397703
+        ],
+        "matched_text": "FLOW DATA",
+        "text_bbox": [
+          481.7004996555556,
+          1096.9284457855556,
+          597.4533005372222,
+          1116.3142774522223
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.447963088566086,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          745.2401759068215
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "PUMP DATA",
+        "title_request_raw": "PUMP DATA",
+        "title_index": 6,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "PUMP DATA",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          1260.4264542341273,
+          745.2401759068215,
+          1288.656169295019
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          1260.4264542341273,
+          745.2401759068215,
+          1288.656169295019
+        ],
+        "matched_text": "PUMP DATA",
+        "text_bbox": [
+          482.05296932222217,
+          1266.17263073,
+          596.7589352938888,
+          1285.5584623966668
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.4474650204399175,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          745.2401759068215
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "SURVEYS",
+        "title_request_raw": "SURVEYS",
+        "title_index": 7,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "SURVEYS",
+          0
+        ],
+        "bbox": [
+          745.2401759068215,
+          1316.813187437037,
+          1119.1334548605967,
+          1345.0131404472222
+        ],
+        "original_bbox": [
+          745.2401759068215,
+          1316.813187437037,
+          1119.1334548605967,
+          1345.0131404472222
+        ],
+        "matched_text": "SURVEYS:",
+        "text_bbox": [
+          814.8607030833334,
+          1322.5677773966668,
+          914.2712478700001,
+          1341.9536090633335
+        ],
+        "text_match_score": 3.5,
+        "text_coverage": 1.0,
+        "geometry_score": 5.445288433211215,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          745.2401759068215,
+          1119.1334548605967
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "CHEMICAL USAGE",
+        "title_request_raw": "CHEMICAL USAGE",
+        "title_index": 8,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "CHEMICAL USAGE",
+          0
+        ],
+        "bbox": [
+          1119.1334548605967,
+          1232.2440070588889,
+          1442.0035263236111,
+          1260.4264542341273
+        ],
+        "original_bbox": [
+          1119.1334548605967,
+          1232.2440070588889,
+          1442.0035263236111,
+          1260.4264542341273
+        ],
+        "matched_text": "CHEMICAL USAGE",
+        "text_bbox": [
+          1194.5292790277779,
+          1236.56517873,
+          1369.0986931861112,
+          1255.9510103966668
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.473112284777927,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1119.1334548605967,
+          1442.0035263236111
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "PRODUCTS: USED | REC | ON SITE",
+        "title_request_raw": "PRODUCTS: USED | REC | ON SITE",
+        "title_index": 9,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "PRODUCTS: USED | REC | ON SITE",
+          0
+        ],
+        "bbox": [
+          1442.0035263236111,
+          1373.203018941919,
+          1857.5541578703703,
+          1401.436827868421
+        ],
+        "original_bbox": [
+          1442.0035263236111,
+          1373.203018941919,
+          1857.5541578703703,
+          1401.436827868421
+        ],
+        "matched_text": "PRODUCTS: USED | REC | ON SITE",
+        "text_bbox": [
+          1484.3474624444445,
+          1377.5530453966667,
+          1815.9227272711114,
+          1396.9388770633334
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.481747310941307,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          1442.0035263236111,
+          1857.5541578703703
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+        "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+        "title_index": 10,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          1542.8739461352657,
+          1857.5541578703703,
+          1573.7165572222225
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          1542.8739461352657,
+          1857.5541578703703,
+          1573.7165572222225
+        ],
+        "matched_text": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+        "text_bbox": [
+          822.2625660833334,
+          1545.595073798,
+          1366.5025191113334,
+          1569.5630111313335
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.4639153080985094,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          1857.5541578703703
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+        "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+        "title_index": 11,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          2170.171512222222,
+          1857.5541578703703,
+          2201.6118349305557
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          2170.171512222222,
+          1857.5541578703703,
+          2201.6118349305557
+        ],
+        "matched_text": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+        "text_bbox": [
+          753.7953333333334,
+          2173.4904124924446,
+          1434.6285612240001,
+          2197.4583498257775
+        ],
+        "text_match_score": 4.0,
+        "text_coverage": 1.0,
+        "geometry_score": 5.47059585631872,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": null,
+        "end_marker_mode": null,
+        "boundary_separator": null,
+        "line_selectors": {},
+        "end_marker_bbox": null,
+        "end_marker_direction": null,
+        "end_marker_matched_text": null,
+        "end_marker_text_bbox": null,
+        "end_marker_text_score": null,
+        "end_marker_geometry_score": null,
+        "end_marker_anchor_source": null,
+        "end_marker_candidate_source": null,
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          1857.5541578703703
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      },
+      {
+        "title": "MAXIMUM GAS",
+        "title_request_raw": "MAXIMUM GAS --- TRIP GAS",
+        "title_index": 12,
+        "occurrence_index": 0,
+        "override_key": [
+          0,
+          "MAXIMUM GAS",
+          0
+        ],
+        "bbox": [
+          331.4191844135803,
+          2462.545096875,
+          745.2401759068215,
+          2493.2981163194445
+        ],
+        "original_bbox": [
+          331.4191844135803,
+          2462.545096875,
+          745.2401759068215,
+          2493.2981163194445
+        ],
+        "matched_text": "MAXIMUM GAS:",
+        "text_bbox": [
+          335.0026243888889,
+          2467.706712409778,
+          502.2226935275554,
+          2489.5598317431113
+        ],
+        "text_match_score": 3.5,
+        "text_coverage": 1.0,
+        "geometry_score": 5.465174413127207,
+        "title_anchor_source": "detected_cell",
+        "title_candidate_source": "word_span",
+        "end_marker": "TRIP GAS",
+        "end_marker_mode": "inclusive",
+        "boundary_separator": "---",
+        "line_selectors": {},
+        "end_marker_bbox": [
+          1581.1002873279915,
+          2462.545096875,
+          1857.5541578703703,
+          2493.2981163194445
+        ],
+        "end_marker_direction": "right",
+        "end_marker_matched_text": "TRIP GAS:",
+        "end_marker_text_bbox": [
+          1648.950796777778,
+          2467.706712409778,
+          1758.4130715184447,
+          2489.5598317431113
+        ],
+        "end_marker_text_score": 3.5,
+        "end_marker_geometry_score": 5.464458763648671,
+        "end_marker_anchor_source": "detected_cell",
+        "end_marker_candidate_source": "word_span",
+        "page_number": 0,
+        "parent_lane": [
+          331.4191844135803,
+          745.2401759068215
+        ],
+        "pre_guide_full_width": false,
+        "auto_width_expanded": false,
+        "layout_constraints": []
+      }
+    ]
+  },
+  "tables": [
+    {
+      "record_type": "table",
+      "slice_id": "T0001",
+      "table_id": "T0001",
+      "sequence": 1,
+      "page_number": 0,
+      "page": 1,
+      "title": "DAILY DRILLING REPORT",
+      "title_request_raw": "DAILY DRILLING REPORT",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        279.65364861111124
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        629.7472954545455
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        629.7472954545455
+      ],
+      "closing_title": "BIT INFORMATION",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        863.1490474166667,
+        219.08229771155558,
+        1283.2703320246667,
+        252.9193857115557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0001__p001__DAILY-DRILLING-REPORT.png",
+      "crop_bbox_with_padding": [
+        328,
+        189,
+        1861,
+        633
+      ],
+      "crop_path": "slice__0001__p001__DAILY-DRILLING-REPORT.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0002",
+      "table_id": "T0002",
+      "sequence": 2,
+      "page_number": 0,
+      "page": 1,
+      "title": "BIT INFORMATION",
+      "title_request_raw": "BIT INFORMATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        1091.192447427399
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        1091.192447427399
+      ],
+      "closing_title": "FLOW DATA",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        432.6367220555556,
+        640.7466945202221,
+        645.4240697008888,
+        664.7146318535554
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0002__p001__BIT-INFORMATION.png",
+      "crop_bbox_with_padding": [
+        328,
+        627,
+        748,
+        1094
+      ],
+      "crop_path": "slice__0002__p001__BIT-INFORMATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0003",
+      "table_id": "T0003",
+      "sequence": 3,
+      "page_number": 0,
+      "page": 1,
+      "title": "BHA # 1",
+      "title_request_raw": "BHA # 1",
+      "occurrence_index": 0,
+      "title_bbox": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        1316.813187437037
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        1316.813187437037
+      ],
+      "closing_title": "SURVEYS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        887.8219240833333,
+        640.0417551868887,
+        978.971989762,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0003__p001__BHA-1.png",
+      "crop_bbox_with_padding": [
+        742,
+        627,
+        1122,
+        1320
+      ],
+      "crop_path": "slice__0003__p001__BHA-1.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0004",
+      "table_id": "T0004",
+      "sequence": 4,
+      "page_number": 0,
+      "page": 1,
+      "title": "MUD PROPERTIES",
+      "title_request_raw": "MUD PROPERTIES",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        1232.2440070588889
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        1232.2440070588889
+      ],
+      "closing_title": "CHEMICAL USAGE",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1174.4385080277777,
+        640.0417551868887,
+        1389.1912265344445,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0004__p001__MUD-PROPERTIES.png",
+      "crop_bbox_with_padding": [
+        1116,
+        627,
+        1445,
+        1235
+      ],
+      "crop_path": "slice__0004__p001__MUD-PROPERTIES.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0005",
+      "table_id": "T0005",
+      "sequence": 5,
+      "page_number": 0,
+      "page": 1,
+      "title": "OPERATION",
+      "title_request_raw": "OPERATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        1373.203018941919
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        1373.203018941919
+      ],
+      "closing_title": "PRODUCTS: USED | REC | ON SITE",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1446.9856777777777,
+        640.0417551868887,
+        1587.941117235111,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0005__p001__OPERATION.png",
+      "crop_bbox_with_padding": [
+        1439,
+        627,
+        1861,
+        1376
+      ],
+      "crop_path": "slice__0005__p001__OPERATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0006",
+      "table_id": "T0006",
+      "sequence": 6,
+      "page_number": 0,
+      "page": 1,
+      "title": "FLOW DATA",
+      "title_request_raw": "FLOW DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1119.40971397703
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1260.4264542341273
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1260.4264542341273
+      ],
+      "closing_title": "PUMP DATA",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        481.7004996555556,
+        1096.9284457855556,
+        597.4533005372222,
+        1116.3142774522223
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0006__p001__FLOW-DATA.png",
+      "crop_bbox_with_padding": [
+        328,
+        1088,
+        748,
+        1263
+      ],
+      "crop_path": "slice__0006__p001__FLOW-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0007",
+      "table_id": "T0007",
+      "sequence": 7,
+      "page_number": 0,
+      "page": 1,
+      "title": "CHEMICAL USAGE",
+      "title_request_raw": "CHEMICAL USAGE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1260.4264542341273
+      ],
+      "table_bbox": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1194.5292790277779,
+        1236.56517873,
+        1369.0986931861112,
+        1255.9510103966668
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0007__p001__CHEMICAL-USAGE.png",
+      "crop_bbox_with_padding": [
+        1116,
+        1229,
+        1445,
+        1546
+      ],
+      "crop_path": "slice__0007__p001__CHEMICAL-USAGE.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0008",
+      "table_id": "T0008",
+      "sequence": 8,
+      "page_number": 0,
+      "page": 1,
+      "title": "PUMP DATA",
+      "title_request_raw": "PUMP DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1288.656169295019
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        482.05296932222217,
+        1266.17263073,
+        596.7589352938888,
+        1285.5584623966668
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0008__p001__PUMP-DATA.png",
+      "crop_bbox_with_padding": [
+        328,
+        1257,
+        748,
+        1546
+      ],
+      "crop_path": "slice__0008__p001__PUMP-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0009",
+      "table_id": "T0009",
+      "sequence": 9,
+      "page_number": 0,
+      "page": 1,
+      "title": "SURVEYS",
+      "title_request_raw": "SURVEYS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1345.0131404472222
+      ],
+      "table_bbox": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        814.8607030833334,
+        1322.5677773966668,
+        914.2712478700001,
+        1341.9536090633335
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0009__p001__SURVEYS.png",
+      "crop_bbox_with_padding": [
+        742,
+        1314,
+        1122,
+        1546
+      ],
+      "crop_path": "slice__0009__p001__SURVEYS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0010",
+      "table_id": "T0010",
+      "sequence": 10,
+      "page_number": 0,
+      "page": 1,
+      "title": "PRODUCTS: USED | REC | ON SITE",
+      "title_request_raw": "PRODUCTS: USED | REC | ON SITE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1401.436827868421
+      ],
+      "table_bbox": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1484.3474624444445,
+        1377.5530453966667,
+        1815.9227272711114,
+        1396.9388770633334
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0010__p001__PRODUCTS-USED-REC-ON-SITE.png",
+      "crop_bbox_with_padding": [
+        1439,
+        1370,
+        1861,
+        1546
+      ],
+      "crop_path": "slice__0010__p001__PRODUCTS-USED-REC-ON-SITE.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0011",
+      "table_id": "T0011",
+      "sequence": 11,
+      "page_number": 0,
+      "page": 1,
+      "title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        1573.7165572222225
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        2170.171512222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        2170.171512222222
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        822.2625660833334,
+        1545.595073798,
+        1366.5025191113334,
+        1569.5630111313335
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0011__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-2400.png",
+      "crop_bbox_with_padding": [
+        328,
+        1540,
+        1861,
+        2173
+      ],
+      "crop_path": "slice__0011__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-2400.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0012",
+      "table_id": "T0012",
+      "sequence": 12,
+      "page_number": 0,
+      "page": 1,
+      "title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2201.6118349305557
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2462.545096875
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2462.545096875
+      ],
+      "closing_title": "MAXIMUM GAS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        753.7953333333334,
+        2173.4904124924446,
+        1434.6285612240001,
+        2197.4583498257775
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0012__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-0600-on-220818.png",
+      "crop_bbox_with_padding": [
+        328,
+        2167,
+        1861,
+        2466
+      ],
+      "crop_path": "slice__0012__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-0600-on-220818.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0013",
+      "table_id": "T0013",
+      "sequence": 13,
+      "page_number": 0,
+      "page": 1,
+      "title": "MAXIMUM GAS",
+      "title_request_raw": "MAXIMUM GAS --- TRIP GAS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        2462.545096875,
+        745.2401759068215,
+        2493.2981163194445
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        2462.545096875,
+        1857.5541578703703,
+        2525.049753472222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        2462.545096875,
+        745.2401759068215,
+        2525.049753472222
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "TRIP GAS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1581.1002873279915,
+        2462.545096875,
+        1857.5541578703703,
+        2493.2981163194445
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "TRIP GAS:",
+      "title_text_bbox": [
+        335.0026243888889,
+        2467.706712409778,
+        502.2226935275554,
+        2489.5598317431113
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1648.950796777778,
+        2467.706712409778,
+        1758.4130715184447,
+        2489.5598317431113
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0013__p001__MAXIMUM-GAS.png",
+      "crop_bbox_with_padding": [
+        328,
+        2460,
+        1861,
+        2528
+      ],
+      "crop_path": "slice__0013__p001__MAXIMUM-GAS.png"
+    }
+  ],
+  "table_count": 13,
+  "trailing_content_slices": [],
+  "trailing_content_count": 0,
+  "all_slices": [
+    {
+      "record_type": "table",
+      "slice_id": "T0001",
+      "table_id": "T0001",
+      "sequence": 1,
+      "page_number": 0,
+      "page": 1,
+      "title": "DAILY DRILLING REPORT",
+      "title_request_raw": "DAILY DRILLING REPORT",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        279.65364861111124
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        629.7472954545455
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        192.271380952381,
+        1857.5541578703703,
+        629.7472954545455
+      ],
+      "closing_title": "BIT INFORMATION",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        863.1490474166667,
+        219.08229771155558,
+        1283.2703320246667,
+        252.9193857115557
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0001__p001__DAILY-DRILLING-REPORT.png",
+      "crop_bbox_with_padding": [
+        328,
+        189,
+        1861,
+        633
+      ],
+      "crop_path": "slice__0001__p001__DAILY-DRILLING-REPORT.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0002",
+      "table_id": "T0002",
+      "sequence": 2,
+      "page_number": 0,
+      "page": 1,
+      "title": "BIT INFORMATION",
+      "title_request_raw": "BIT INFORMATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        1091.192447427399
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        629.7472954545455,
+        745.2401759068215,
+        1091.192447427399
+      ],
+      "closing_title": "FLOW DATA",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        432.6367220555556,
+        640.7466945202221,
+        645.4240697008888,
+        664.7146318535554
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0002__p001__BIT-INFORMATION.png",
+      "crop_bbox_with_padding": [
+        328,
+        627,
+        748,
+        1094
+      ],
+      "crop_path": "slice__0002__p001__BIT-INFORMATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0003",
+      "table_id": "T0003",
+      "sequence": 3,
+      "page_number": 0,
+      "page": 1,
+      "title": "BHA # 1",
+      "title_request_raw": "BHA # 1",
+      "occurrence_index": 0,
+      "title_bbox": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        1316.813187437037
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        745.2401759068215,
+        629.7472954545455,
+        1119.1334548605967,
+        1316.813187437037
+      ],
+      "closing_title": "SURVEYS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        887.8219240833333,
+        640.0417551868887,
+        978.971989762,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0003__p001__BHA-1.png",
+      "crop_bbox_with_padding": [
+        742,
+        627,
+        1122,
+        1320
+      ],
+      "crop_path": "slice__0003__p001__BHA-1.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0004",
+      "table_id": "T0004",
+      "sequence": 4,
+      "page_number": 0,
+      "page": 1,
+      "title": "MUD PROPERTIES",
+      "title_request_raw": "MUD PROPERTIES",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        1232.2440070588889
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1119.1334548605967,
+        629.7472954545455,
+        1442.0035263236111,
+        1232.2440070588889
+      ],
+      "closing_title": "CHEMICAL USAGE",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1174.4385080277777,
+        640.0417551868887,
+        1389.1912265344445,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0004__p001__MUD-PROPERTIES.png",
+      "crop_bbox_with_padding": [
+        1116,
+        627,
+        1445,
+        1235
+      ],
+      "crop_path": "slice__0004__p001__MUD-PROPERTIES.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0005",
+      "table_id": "T0005",
+      "sequence": 5,
+      "page_number": 0,
+      "page": 1,
+      "title": "OPERATION",
+      "title_request_raw": "OPERATION",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        668.1134741830064
+      ],
+      "table_bbox": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        1373.203018941919
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1442.0035263236111,
+        629.7472954545455,
+        1857.5541578703703,
+        1373.203018941919
+      ],
+      "closing_title": "PRODUCTS: USED | REC | ON SITE",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1446.9856777777777,
+        640.0417551868887,
+        1587.941117235111,
+        664.009692520222
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0005__p001__OPERATION.png",
+      "crop_bbox_with_padding": [
+        1439,
+        627,
+        1861,
+        1376
+      ],
+      "crop_path": "slice__0005__p001__OPERATION.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0006",
+      "table_id": "T0006",
+      "sequence": 6,
+      "page_number": 0,
+      "page": 1,
+      "title": "FLOW DATA",
+      "title_request_raw": "FLOW DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1119.40971397703
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1260.4264542341273
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1091.192447427399,
+        745.2401759068215,
+        1260.4264542341273
+      ],
+      "closing_title": "PUMP DATA",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        481.7004996555556,
+        1096.9284457855556,
+        597.4533005372222,
+        1116.3142774522223
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0006__p001__FLOW-DATA.png",
+      "crop_bbox_with_padding": [
+        328,
+        1088,
+        748,
+        1263
+      ],
+      "crop_path": "slice__0006__p001__FLOW-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0007",
+      "table_id": "T0007",
+      "sequence": 7,
+      "page_number": 0,
+      "page": 1,
+      "title": "CHEMICAL USAGE",
+      "title_request_raw": "CHEMICAL USAGE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1260.4264542341273
+      ],
+      "table_bbox": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1119.1334548605967,
+        1232.2440070588889,
+        1442.0035263236111,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1194.5292790277779,
+        1236.56517873,
+        1369.0986931861112,
+        1255.9510103966668
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0007__p001__CHEMICAL-USAGE.png",
+      "crop_bbox_with_padding": [
+        1116,
+        1229,
+        1445,
+        1546
+      ],
+      "crop_path": "slice__0007__p001__CHEMICAL-USAGE.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0008",
+      "table_id": "T0008",
+      "sequence": 8,
+      "page_number": 0,
+      "page": 1,
+      "title": "PUMP DATA",
+      "title_request_raw": "PUMP DATA",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1288.656169295019
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1260.4264542341273,
+        745.2401759068215,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        482.05296932222217,
+        1266.17263073,
+        596.7589352938888,
+        1285.5584623966668
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0008__p001__PUMP-DATA.png",
+      "crop_bbox_with_padding": [
+        328,
+        1257,
+        748,
+        1546
+      ],
+      "crop_path": "slice__0008__p001__PUMP-DATA.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0009",
+      "table_id": "T0009",
+      "sequence": 9,
+      "page_number": 0,
+      "page": 1,
+      "title": "SURVEYS",
+      "title_request_raw": "SURVEYS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1345.0131404472222
+      ],
+      "table_bbox": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        745.2401759068215,
+        1316.813187437037,
+        1119.1334548605967,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        814.8607030833334,
+        1322.5677773966668,
+        914.2712478700001,
+        1341.9536090633335
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0009__p001__SURVEYS.png",
+      "crop_bbox_with_padding": [
+        742,
+        1314,
+        1122,
+        1546
+      ],
+      "crop_path": "slice__0009__p001__SURVEYS.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0010",
+      "table_id": "T0010",
+      "sequence": 10,
+      "page_number": 0,
+      "page": 1,
+      "title": "PRODUCTS: USED | REC | ON SITE",
+      "title_request_raw": "PRODUCTS: USED | REC | ON SITE",
+      "occurrence_index": 0,
+      "title_bbox": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1401.436827868421
+      ],
+      "table_bbox": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1542.8739461352657
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        1442.0035263236111,
+        1373.203018941919,
+        1857.5541578703703,
+        1542.8739461352657
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        1484.3474624444445,
+        1377.5530453966667,
+        1815.9227272711114,
+        1396.9388770633334
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0010__p001__PRODUCTS-USED-REC-ON-SITE.png",
+      "crop_bbox_with_padding": [
+        1439,
+        1370,
+        1861,
+        1546
+      ],
+      "crop_path": "slice__0010__p001__PRODUCTS-USED-REC-ON-SITE.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0011",
+      "table_id": "T0011",
+      "sequence": 11,
+      "page_number": 0,
+      "page": 1,
+      "title": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 2400",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        1573.7165572222225
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        2170.171512222222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        1542.8739461352657,
+        1857.5541578703703,
+        2170.171512222222
+      ],
+      "closing_title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        822.2625660833334,
+        1545.595073798,
+        1366.5025191113334,
+        1569.5630111313335
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0011__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-2400.png",
+      "crop_bbox_with_padding": [
+        328,
+        1540,
+        1861,
+        2173
+      ],
+      "crop_path": "slice__0011__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-2400.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0012",
+      "table_id": "T0012",
+      "sequence": 12,
+      "page_number": 0,
+      "page": 1,
+      "title": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "title_request_raw": "HOURLY OPERATIONS SUMMARY 0000 to 0600 on 22/08/18",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2201.6118349305557
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2462.545096875
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        2170.171512222222,
+        1857.5541578703703,
+        2462.545096875
+      ],
+      "closing_title": "MAXIMUM GAS",
+      "boundary_source": "next_overlapping_title",
+      "end_marker": null,
+      "end_marker_mode": null,
+      "boundary_separator": null,
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": null,
+      "end_marker_direction": null,
+      "end_marker_matched_text": null,
+      "title_text_bbox": [
+        753.7953333333334,
+        2173.4904124924446,
+        1434.6285612240001,
+        2197.4583498257775
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": null,
+      "end_marker_anchor_source": null,
+      "end_marker_candidate_source": null,
+      "crop_filename": "slice__0012__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-0600-on-220818.png",
+      "crop_bbox_with_padding": [
+        328,
+        2167,
+        1861,
+        2466
+      ],
+      "crop_path": "slice__0012__p001__HOURLY-OPERATIONS-SUMMARY-0000-to-0600-on-220818.png"
+    },
+    {
+      "record_type": "table",
+      "slice_id": "T0013",
+      "table_id": "T0013",
+      "sequence": 13,
+      "page_number": 0,
+      "page": 1,
+      "title": "MAXIMUM GAS",
+      "title_request_raw": "MAXIMUM GAS --- TRIP GAS",
+      "occurrence_index": 0,
+      "title_bbox": [
+        331.4191844135803,
+        2462.545096875,
+        745.2401759068215,
+        2493.2981163194445
+      ],
+      "table_bbox": [
+        331.4191844135803,
+        2462.545096875,
+        1857.5541578703703,
+        2525.049753472222
+      ],
+      "automatic_table_bbox_before_explicit_marker": [
+        331.4191844135803,
+        2462.545096875,
+        745.2401759068215,
+        2525.049753472222
+      ],
+      "closing_title": null,
+      "boundary_source": "inclusive_end_marker_right_lane_span",
+      "end_marker": "TRIP GAS",
+      "end_marker_mode": "inclusive",
+      "boundary_separator": "---",
+      "line_selectors": {},
+      "line_selector_metadata": null,
+      "end_marker_bbox": [
+        1581.1002873279915,
+        2462.545096875,
+        1857.5541578703703,
+        2493.2981163194445
+      ],
+      "end_marker_direction": "right",
+      "end_marker_matched_text": "TRIP GAS:",
+      "title_text_bbox": [
+        335.0026243888889,
+        2467.706712409778,
+        502.2226935275554,
+        2489.5598317431113
+      ],
+      "title_anchor_source": "detected_cell",
+      "title_candidate_source": "word_span",
+      "layout_constraints": [],
+      "end_marker_text_bbox": [
+        1648.950796777778,
+        2467.706712409778,
+        1758.4130715184447,
+        2489.5598317431113
+      ],
+      "end_marker_anchor_source": "detected_cell",
+      "end_marker_candidate_source": "word_span",
+      "crop_filename": "slice__0013__p001__MAXIMUM-GAS.png",
+      "crop_bbox_with_padding": [
+        328,
+        2460,
+        1861,
+        2528
+      ],
+      "crop_path": "slice__0013__p001__MAXIMUM-GAS.png"
+    }
+  ],
+  "slice_count": 13
+}

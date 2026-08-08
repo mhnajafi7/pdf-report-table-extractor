@@ -1,0 +1,4 @@
+title: PDF Report Table Extractor
+description: Preprocessing complex Daily Drilling Reports for OCR and structured Markdown extraction.
+theme: jekyll-theme-cayman
+show_downloads: true

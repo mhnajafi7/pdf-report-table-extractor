@@ -1,0 +1,15 @@
+# Python dependencies for PDF splitting and table extraction
+
+pypdf>=4.2,<7
+pdfplumber>=0.11,<0.12
+pdf2image>=1.17,<2
+Pillow>=10.2,<12
+
+# System dependency (not installed by pip):
+# Poppler must be installed and `pdftoppm` must be available on PATH.
+#
+# macOS:
+#   brew install poppler
+#
+# Ubuntu / Debian:
+#   sudo apt-get install poppler-utils
